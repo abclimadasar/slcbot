@@ -122,7 +122,7 @@ function clearTmp() {
 }
 
 const hehe = async (jid, options) => {
-  let wm = 'ꜰᴀɴɢᴢ xᴅ';
+  let wm = 'Silence-MD';
   let gambar = 'https://telegra.ph/file/2d06f0936842064f6b3bb.png';
   try {
     gambar = await conn.profilePictureUrl(jid, 'image');
