@@ -16,12 +16,12 @@ const { name, author } = require(join(__dirname, './package.json')) // https://w
 const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 
-say('FZBOT\nMD', {
+say('SILENCE\nMD', {
   font: 'block',
   align: 'center',
   colors: ['blue']
 })
-say(`FZBOT-MD By @${global.nameown}`, {
+say(`SILENCE-MD, Bot By @${global.nameown}`, {
   font: 'console',
   align: 'center',
   colors: ['green']
