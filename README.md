@@ -15,7 +15,7 @@
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
  <p align="center">
-<img width="" src="https://img.shields.io/github/repo-size/eabdalmufid/FZBOT?color=red&label=Repo%20Size&style=for-the-badge&logo=appveyor">
+<img width="" src="https://img.shields.io/github/repo-size/eabdalmufid/SLCBOT-V2?color=red&label=Repo%20Size&style=for-the-badge&logo=appveyor">
 </p>
 <p align="center"><img src="https://profile-counter.glitch.me/{eabdalmufid}/count.svg" alt="eabdalmufid :: Visitor's Count" /></p>
 
