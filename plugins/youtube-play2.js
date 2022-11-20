@@ -1,7 +1,7 @@
 import fs from 'fs'
 import fetch from 'node-fetch'
 let handler = async (m, {command, conn, text}) => {
-if (!text) throw `[❗INFO❗] Masukan Nama Lagu Yang Ingin Di Cari\n\n*—◉ Contoh:\n#play.1 Good Feeling - Flo Rida*`
+if (!text) throw `[❗INFO❗] Masukan Nama Lagu Yang Ingin Di Cari\n\n*—◉ Contoh:◉—*\n*.play.1 Good Feeling - Flo Rida*`
 try {
 if (command == 'play.1') {
 conn.reply(m.chat, `*_⏳Wait.._⏳*`, m, {
