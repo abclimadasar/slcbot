@@ -32,7 +32,7 @@ let name = await conn.getName(who)
 
     let img1 = fs.readFileSync('./img/yt.png');
     let img2 = fs.readFileSync('./img/bawah.png');
-    return conn.sendButton(m.chat, `${htki} YT PLAY ${htka}`, sewa, thumbnail, [["menu", usedPrefix + "menu"], ["profile", usedPrefix + "profile"]], m, {
+    return conn.sendButton(m.chat, `${htki} YT PLAY ${htka}`, sewa, thumbnail, [["Menu", usedPrefix + "menu"], ["Profile", usedPrefix + "profile"]], m, {
         contextInfo: {
             externalAdReply: {
                 mediaUrl: url,
