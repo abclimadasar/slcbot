@@ -9,7 +9,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
 	let namae = conn.getName(m.sender)
 	const sections = [
 	{
-	title: htjava + "Select Your Age Here !" + htjava,
+	title: htjava + " Select Your Age Here! " + htjava,
 	rows: [
 	    {title: "Random Tahun", rowId: '.daftar ' + namae + '.' + pickRandom(['30','29','28','27','26','25','24','23','22','21','20','19','18','17','16','15','14','13','12','11','10','9'])}
 	]
@@ -55,12 +55,11 @@ let handler = async function (m, { text, usedPrefix, command }) {
 ⬡ Kalau tidak kelihatan button nya, contohnya dibawah!
 ┗━━━━━━━━━━━━━━━━━━㉿
 ┏━━〔 ıll CONTOH llı 〕━㉿
-⬡ #daftar namamu.umurmu
-⬡ #daftar ${conn.getName(m.sender)}.17
+⬡ .daftar namamu.umurmu
+⬡ .daftar ${conn.getName(m.sender)}.17
 ┗━━━━━━━━━━㉿ 
-⫹⫺ 
-⫹⫺`, 
-   footer: `┗ © FangzXD*`, 
+⬡`, 
+   footer: `*⬡ © AngelDark*`, 
    title: "", 
    buttonText: "CLICK HERE", 
    sections 
@@ -87,12 +86,12 @@ let handler = async function (m, { text, usedPrefix, command }) {
  ╭━━━━「 *BERHASIL* 」
  ❖ Terima kasih ${name} Sudah mendaftar
 Di Database kami
- ❖ © FANGZ BOT || ALL RESERVED
+ ❖ SILENCE BOT || ALL RESERVED
 
  ╭━━━━「 *DATA* 」
- ┊⫹ *Sucsess ☑️* 】Status
- ┊⫹ *${name}* 】Nama
- ┊⫹ *${age}* 】Umur/Age                                          
+ ┊• Status : *Sucsess ☑️*  】
+ ┊• Nama  : *${name}*   】
+ ┊• Umur   : *${age}*  】                                          
  ╰═┅═━––––––๑
 
 *SYARAT*
@@ -105,7 +104,7 @@ Jika owner mengetahui Hal di atas, Maka tidak segan²
 Nomor akan di banned!.
 ` 
    let buttonMessage= { 
- 'document':{'url':sig}, 
+ 'document':{'url':sgc}, 
  'mimetype':mim_.getRandom(), 
  'fileName':hiasan, 
  'fileLength':fsizedoc, 
@@ -119,16 +118,16 @@ Nomor akan di banned!.
  'previewType':'pdf', 
  'title':global.bottime, 
  'body':global.titlebot, 
- 'thumbnail':await(await fetch('https://telegra.ph/file/67ea0570777ef4f08009f.jpg')).buffer(),
- 'sourceUrl':sig}}, 
- 'caption':cap, 
- 'footer':botdate, 
+ 'thumbnail':await(await fetch('https://telegra.ph/file/f7f8efef516f7f5698724.jpg')).buffer(),
+ 'sourceUrl':sgc}}, 
+ 'caption':bottime, 
+ 'footer':cap, 
  'buttons':[ 
- {'buttonId':'.ref','buttonText':{'displayText':'❍REFERAL'},'type':1}, 
- {'buttonId':'.menu','buttonText':{'displayText':'❍LIST MENU'},'type':1} 
+ {'buttonId':'.ref','buttonText':{'displayText':'❍ REFERAL'},'type':1}, 
+ {'buttonId':'.start','buttonText':{'displayText':'❍ CARI TEMAN'},'type':1} 
  ], 
  'headerType':6} 
-     await conn.sendMessage(m.chat,buttonMessage, { quoted:m}) 
+     await conn.sendMessage(m.chat,buttonMessage, { quoted:fpay}) 
  } 
  handler.help = ['daftar', 'register'].map(v => v + ' <nama>.<umur>') 
  handler.tags = ['xp'] 
