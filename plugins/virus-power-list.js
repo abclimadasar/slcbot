@@ -2,7 +2,7 @@ let handler = async (m, { conn }) => {
 let info = `
 *${htki} VIRUS ${htka}*
           
- 🔥BY FANGZ🔥
+ 🔥BY ANGELDARK 🔥
           
                   
 –––––– *ᴋᴇʙɪᴊᴀᴋᴀɴ* ––––––
@@ -12,17 +12,17 @@ const sections = [
    {
     title: `✃ VIRTEX`,
 	rows: [
-	    {title: "🌀Power 1", rowId: '.virtex21', description: 'Jangan lupa Subs Yt FANGZ BOT' },
-	    {title: "🌀Power 2", rowId: '.virtex22', description: 'Jangan lupa subs Yt FANGZ BOT' },
-	{title: "🌀Power 3", rowId: '.virtex23', description: 'Jangan lupa subs Yt FANGZ BOT' },
-	{title: "🌀Power 4", rowId: '.virtex24', description: 'Jangan lupa subs Yt FANGZ BOT' },
-	{title: "🌀Power 5", rowId: '.virtex25', description: 'Jangan lupa subs Yt FANGZ BOT' },
+	    {title: "🌀Power 1", rowId: '.virtex21', description: 'Jangan lupa Subs Yt SILENCE OFFICIAL' },
+	    {title: "🌀Power 2", rowId: '.virtex22', description: 'Jangan lupa subs Yt SILENCE OFFICIAL' },
+	{title: "🌀Power 3", rowId: '.virtex23', description: 'Jangan lupa subs Yt SILENCE OFFICIAL' },
+	{title: "🌀Power 4", rowId: '.virtex24', description: 'Jangan lupa subs Yt SILENCE OFFICIAL' },
+	{title: "🌀Power 5", rowId: '.virtex25', description: 'Jangan lupa subs Yt SILENCE OFFICIAL' },
 	]
     }, {
     title: `✃ INFO`,
 	rows: [
 	    {title: "🔥Download WhatsApp Imune", rowId: '.imune', description: 'Download WhatsApp Kebal' },
-	    {title: "🔥Virus Troli", rowId: '.virustroli', description: 'Subs Yt FANGZ BOT' },
+	    {title: "🔥Virus Troli", rowId: '.virustroli', description: 'Subs Yt SILENCE OFFICIAL' },
 	    ]
         }, {
     title: `✃ BUY`,
