@@ -8,7 +8,7 @@ const sections = [
    {
     title: `✃ INFO`,
 	rows: [
-	    {title: "🗃️Menu", rowId: '.menu', description: 'Event Fangz BOT' },
+	    {title: "🗃️Menu", rowId: '.menu', description: 'Event Silence BOT' },
 	{title: "🎀YT Bot", rowId: '.ytbot', description: 'Youtube Bot' },
 	]
     }, {
@@ -23,7 +23,7 @@ const listMessage = {
   text: ' ',
   footer: info,
   title: null,
-  buttonText: "FANGZ BOT🎐",
+  buttonText: "SILENCE BOT🎐",
   sections
 }
 await conn.sendMessage(m.chat, listMessage, { quoted: m})
