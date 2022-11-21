@@ -1,6 +1,6 @@
 let handler = async (m) => {
     global.db.data.chats[m.chat].isBanned = false
-    m.reply('*Sukses Menghidupkan FANGZ BOT ✅*')
+    m.reply('*Sukses Menghidupkan SILENCE BOT ✅*')
 }
 handler.command = /^(boton)$/i
 handler.owner = true
