@@ -11,7 +11,7 @@ let totalf = Object.values(global.plugins).filter(
     (v) => v.help && v.tags
   ).length;
  await conn.sendButton(m.chat, `𝙏𝙃𝘼𝙉𝙆𝙎 𝙏𝙊\n\n◐ Fokus ID\n◐AbdulMufid\n◐The.sad.boy01\n◐Kanna\n◐Nurutomo\n◐Bochilgaming\n◐Amirul\n◐Ilham\n◐Rasel\n◐Pemakai bot ini\n◐I love you\n\n© https://bit.ly/3QJOy9F
- `,dmenuf + '\n\n' + cmenua, `${imgr + 'Thanks To'}`, [['THNKS FANGZ','Ok']], m, {
+ `,dmenuf + '\n\n' + cmenua, `${imgr + 'Thanks To'}`, [['THNKS KANNA','Ok']], m, {
 contextInfo: { externalAdReply :{
                         mediaUrl: '',
                         mediaType: 2,
