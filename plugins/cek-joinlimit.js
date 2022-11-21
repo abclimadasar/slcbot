@@ -4,7 +4,7 @@ let handler = async (m, { conn, args, command }) => {
     if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
     else who = m.sender
     if (typeof db.data.users[who] == 'undefined') throw 'Pengguna tidak ada didalam data base'
- await conn.sendButton(m.chat, ${global.db.data.users[who].joinlimit}\n`,hiasan + '\n\n' + , jlimit, [['FANGZ','Fangz']], m, {
+ await conn.sendButton(m.chat, ${global.db.data.users[who].joinlimit}\n`,hiasan + '\n\n' + , jlimit, [['KANNA','Kanna']], m, {
 contextInfo: { externalAdReply :{
                         mediaUrl: '',
                         mediaType: 2,
