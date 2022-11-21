@@ -6,12 +6,10 @@ const sections = [
    {
 	title: `𝗝𝗢𝗜𝗡 𝗞𝗘 𝗚𝗥𝗨𝗣 𝗢𝗙𝗙𝗜𝗖𝗜𝗔𝗟 𝗦𝗛𝗜𝗡𝗡 𝗕𝗢𝗧*\n\n\n━━━〔 Dᴏɴ'ᴛ ғᴏʀɢᴇᴛ Dᴏɴᴀᴛɪᴏɴ 〕━━━`,
 	rows: [
-	    {title: '💌 › Group Fangz BOT', description: "Group Utama Fangz BOT", rowId:".gcbot"},
-        {title: '✉️ › Grup TokoBot', description: "Group Kedua", rowId:".gcbot2"},
-        {title: '📧 › Group Full Bot', description: "Gruop Ketiga", rowId:".gcbot3"},
-        {title: '🎐 › Owner', description: "Creator Fangz BOT >ω<", rowId:".owner"},
-        {title: '🧿 › Info Fangz BOT', description: "Info Fangz BOT >ω<", rowId:".info"},
-        {title: '📮 › Donasi', description: "Donasi Untuk Fangz ≧▽≦", rowId:".donasi"},
+	    {title: '💌 › Group Silence BOT', description: "Group Utama Silence BOT", rowId:".gcbot"},
+        {title: '🎐 › Owner', description: "Creator Silence BOT >ω<", rowId:".owner"},
+        {title: '🧿 › Info Silence BOT', description: "Info Silence BOT >ω<", rowId:".info"},
+        {title: '📮 › Donasi', description: "Donasi Untuk Silence ≧▽≦", rowId:".donasi"},
 	    ]
       },
 ]
