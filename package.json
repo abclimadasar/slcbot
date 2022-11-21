@@ -1,7 +1,7 @@
 {
-    "name": "FangzXD",
+    "name": "SLCBOT-MD",
     "version": "2.10.18",
-    "description": "Subscribe YT FangzXD",
+    "description": "Subscribe YT Silence Official",
     "main": "index.js",
     "type": "module",
     "engines": {
