@@ -13,27 +13,27 @@ let handler = async (m, { text, usedPrefix }) => {
 
     //menentukan rules
     if (text == astro) {
-        m.reply(`Seri!\nkamu: ${text}\nFangz Bot: ${astro}`)
+        m.reply(`Seri!\nkamu: ${text}\nSilence Bot: ${astro}`)
     } else if (text == 'batu') {
         if (astro == 'gunting') {
             global.db.data.users[m.sender].money += 1000
-            m.reply(`Kamu Menang!\n+1000 Money\nKamu: ${text}\nFangz Bot: ${astro}`)
+            m.reply(`Kamu Menang!\n+1000 Money\nKamu: ${text}\nSilence Bot: ${astro}`)
         } else {
-            m.reply(`Kamu Kalah!\nKamu: ${text}\nFangz Bot: ${astro}`)
+            m.reply(`Kamu Kalah!\nKamu: ${text}\nSilence Bot: ${astro}`)
         }
     } else if (text == 'gunting') {
         if (astro == 'kertas') {
             global.db.data.users[m.sender].money += 1000
-            m.reply(`Kamu Menang!\n+1000 Money\nKamu: ${text}\nFangz Bot: ${astro}`)
+            m.reply(`Kamu Menang!\n+1000 Money\nKamu: ${text}\nSilence Bot: ${astro}`)
         } else {
-            m.reply(`Kamu Kalah!\nKamu: ${text}\nFangz Bot: ${astro}`)
+            m.reply(`Kamu Kalah!\nKamu: ${text}\nFSilence Bot: ${astro}`)
         }
     } else if (text == 'kertas') {
         if (astro == 'batu') {
             global.db.data.users[m.sender].money += 1000
-            m.reply(`Kamu Menang! \n+1000 Money\nKamu: ${text}\nFangz Bot: ${astro}`)
+            m.reply(`Kamu Menang! \n+1000 Money\nKamu: ${text}\nSilence Bot: ${astro}`)
         } else {
-            m.reply(`Kamu Kalah!\nKamu: ${text}\nFangz Bot: ${astro}`)
+            m.reply(`Kamu Kalah!\nKamu: ${text}\nSilence Bot: ${astro}`)
         }
     } else {
         throw salah
