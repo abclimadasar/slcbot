@@ -17,7 +17,7 @@ contextInfo: { externalAdReply :{
                         mediaType: 2,
                         description: 'anu',
                         title: bottime,
-                        body: 'Contributor FangzXD',          previewType: 0,
+                        body: 'Contributor AngelDark',          previewType: 0,
                         jpegThumbnail: await (await fetch(thumbdoc)).buffer(),
                         sourceUrl: swb
                       }}
