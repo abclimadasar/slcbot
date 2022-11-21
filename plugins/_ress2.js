@@ -13,14 +13,14 @@ export async function all(m) {
 if (m.isBaileys) return
     if (m.chat.endsWith('broadcast')) return
     try {
-    let TandaTanya = /^(fangz|pangz|fang|pang)$/i.test(m.text)
+    let TandaTanya = /^(kanna|Kanna|KANNA)$/i.test(m.text)
         if (TandaTanya && m.isGroup) {
             await this.sendMessage(m.chat, { sticker : stc, thumbnail: await( await fetch(pp)).buffer() , contextInfo:{  externalAdReply: { showAdAttribution: true,
 mediaType:  1,
 mediaUrl: sig,
-title: 'FANGZ SIBUK ❗',
+title: 'KANNA SIBUK ❗',
 body: bottime,
-sourceUrl: 'https://chat.whatsapp.com/HpxyS6b45SoGIKG7LHddiM',
+sourceUrl: 'https://chat.whatsapp.com/I2OK9w2mkIpKngLpFs0i93',
 thumbnail: await( await fetch(pp)).buffer()
   }
  }}, { quoted: m })
