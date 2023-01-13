@@ -32,25 +32,22 @@ global.wktuwib = `${global.wibh} H ${global.wibm} M ${global.wibs} S`
 // kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
 global.sig = 'https://instagram.com/eabdalmufid_' //Instagram mu
 global.sgh = 'https://github.com/eabdalmufid' //Github mu
-global.swb = 'https://linktr.ee/whatsappbotz '
+global.swb = 'http://silenceweb.vercel.app'
 global.sfb = 'https://www.facebook.com/'
-global.syt = 'https://www.youtube.com/@silencebot' //YT Mu
-global.sgc = 'https://chat.whatsapp.com/I2OK9w2mkIpKngLpFs0i93' //Group WhatsApp mu
-global.sdc = 'https://www.youtube.com/@silencebot' //Discord Mu
+global.syt = 'https://youtube.com/@silenceofc' //YT Mu
+global.sgc = 'https://chat.whatsapp.com/L5jhSrREsbjCV2es6mSTG6' //Group WhatsApp mu
+global.sdc = 'https://youtube.com/@silenceofc' //Discord Mu
 global.snh = 'https://nhentai.net/g/365296/' //Make ini aja gausah di ganti.
 
-/*⫘⫘⫘⫘ALL PAYMENT⫘⫘⫘⫘⫘*/
+/*⫘⫘⫘⫘PAYMENT⫘⫘⫘⫘⫘*/
 global.pdana = '089509952003' //Dana
-global.povo = '089509952003' //Ovo
-global.pgopay = '089509952003' //Gopay
-global.ppulsa = '089509952003' //Pulsa 
-global.ppulsa2 = '0881080130122' //Pulsa, Kalau nomor cuma 1, yg ini kasih tanda -
+global.ppulsa = '089509952003' //Pulsa
 global.psaweria = 'https://bit.ly/QRISPAY' //Saweria
-global.donate = '〔 Dᴏɴᴛ ғᴏʀɢᴇᴛ Dᴏɴᴀᴛɪᴏɴ 〕\n\n››╭─〘 *Donasi* 〙\n╭╡📮: Donasi Ngab, Jangan Makai Bot doang.│\n┝‷✧ *Ovo:* 089509952003\n│┝‷✧ *Dana:* 089509952003\n│┝‷✧ *Gopay:* 089509952003\n│╰───···─────\n│⁺◛˖ Ingin Donasi? Chat nomor owner\n╰──────────···───╮'
+global.donate = '〔 Dᴏɴᴛ ғᴏʀɢᴇᴛ Dᴏɴᴀᴛɪᴏɴ 〕\n\n››╭─〘 *Donasi* 〙\n╭╡📮 Donasi Broo, Jangan Makai Doang!\n│┝‷✧ *Three3:* 089509952003\n│┝‷✧ *Dana:* 089509952003\n│┝‷✧ *QRIS:* https://bit.ly/QRISPAY \n│╰───···─────\n│⁺◛˖ Ingin Donasi? Chat nomor owner\n╰──────────···───╮\n'
 
 /*⫘⫘⫘⫘ GLOBAL NOMOR ⫘⫘⫘⫘⫘*/
-global.nomorbot = '6287787369563' //Nomor Bot mu
-global.nomorown = '19047502362' //Nomormu
+global.nomorbot = '6287782830002' //Nomor Bot mu
+global.nomorown = '79814212373'
 global.namebot = 'Silence BOT' //Nama bot mu
 global.nameown = 'AngelDark' //Nama mu
 
@@ -58,35 +55,20 @@ global.nameown = 'AngelDark' //Nama mu
 //KALAU MAGER EDIT, MENDING GAUSAH DI APA² IN. SAMA AJA//
 global.danied = '✘ 𝗘𝗥𝗢𝗥 𝟰𝟬𝟰' //Gausah di apa² in
 global.after = 'Bot by https://linktr.ee/whatsappbotz'
-global.swo = 'https://wa.me/19047502362'
-global.author = '           © Silence BOT By AngelDark' //Wm author
+global.swo = 'https://wa.me/79814212373'
+global.author = '                © Silence BOT By AngelDark' //Wm author
 global.botintro = 'Hallo, Kenalin saya Silence BOT Saya akan membantu Anda kapan pun & Dimana pun, Saya asisten bot WhatsApp yang di buat oleh *AngelDark* Saya di rilis pada tanggal\n🗓 ️_13/01/2022_'
 global.sallam = '💬 Waalaikumsallam'
-global.thumbBanned = 'https://telegra.ph/file/b810a9fbc18afc1aaa6c8.jpg'
-global.thumbWarn = 'https://telegra.ph/file/38f72943a6f152112d128.jpg'
-global.speed = 'https://telegra.ph/file/733725060ca73e223a0ab.jpg'
-global.ow = 'https://telegra.ph/file/43b5e212d5e713dc3f35d.jpg'
-global.intro = 'https://telegra.ph/file/489bbe15f3be834f1ac84.jpg'
-global.donsi = 'https://telegra.ph/file/a60e05249296c38bbb0d5.jpg'
-global.assalam = 'https://telegra.ph/file/867134be21091efeee226.jpg'
-global.collab = 'https://telegra.ph/file/09f8b94f8d820153034e2.jpg'
-global.dand = 'https://telegra.ph/file/7fb83420644e354aa0eec.jpg'
-global.thumbEnable = 'https://telegra.ph/file/8c89c250c1cda88d92b3d.jpg'
-global.runtime = 'https://telegra.ph/file/624dda855b899a0c727a6.jpg'
-global.serialimg = 'https://telegra.ph/file/eaf30ca57d5c4c2d7a6f0.jpg'
-global.jlimit = 'https://telegra.ph/file/449ce1a72312c8fcb99f6.jpg'
-global.thumbDidyou = 'https://telegra.ph/file/e27e5468705a73de2328d.jpg'
-global.verify = 'https://telegra.ph/file/3b66f40f5d3f1748f993f.jpg'
-global.thumbLevelup = 'https://telegra.ph/file/4d4e0b19e3feb1fa4c3cb.jpg'
+global.assalam = 'https://telegra.ph/file/fe5ac925c2172b98b2c68.jpg'
+global.serialimg = 'https://telegra.ph/file/f8f0be29f5f1dbd9b6d98.jpg'
+global.jlimit = 'https://telegra.ph/file/d3c08fdd5eaec51acf823.jpg'
 global.thumbEror = 'https://telegra.ph/file/430b8f1ae35c655bfee93.jpg'
-global.thumbnailCuaca = 'https://telegra.ph/file/636af9d2fb8194f4dbb94.jpg'
-global.guest = 'https://telegra.ph/file/b0ac5006061e9bc535a8f.jpg'
-global.thumbmenfes = 'https://telegra.ph/file/4be6353aeb9057e44825f.jpg'
+global.thumbnailCuaca = 'https://telegra.ph/file/96a0c4fba7d5233eb8c40.jpg'
 /*⫘⫘⫘⫘ STAFF ⫘⫘⫘⫘⫘*/
 global.owner = [
-  ['6287787369563'], //Owner1
-  ['79680341674'], //Owner2
-  ['6287787369563', 'AngelDark', true] //Ini buat kamu!
+  ['62895411954396'], //Owner1
+  ['19047502362'], //Owner2
+  ['79814212373', 'AngelDark', true] //Ini buat kamu!
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -96,8 +78,7 @@ global.prems = [] // Jangan di isi, Tambahin dari bot nya ketik .addprem @Fangz 
 
 
 /*⫘⫘⫘⫘ APIKEY ⫘⫘⫘⫘⫘*/
-global.APIs = { // API Prefix
-  // name: 'https://website'
+global.APIs = {
   nrtm: 'https://nurutomo.herokuapp.com',
   rey: 'https://server-api-rey.herokuapp.com',
   xteam: 'https://api.xteam.xyz',
@@ -109,20 +90,21 @@ global.APIs = { // API Prefix
   pencarikode: 'https://pencarikode.xyz',
   ana: 'https://anabotofc.herokuapp.com/',
   amel: 'https://melcanz.com',
-  bsbt: 'https://bsbt-api-rest.herokuapp.com', 
+  ziy : 'https://ziy.herokuapp.com',
   hardianto: 'https://hardianto.xyz',
   botstyle: 'https://botstyle-api.herokuapp.com',
   adiisus: 'https://adiixyzapi.herokuapp.com',
   LeysCoder: 'https://leyscoders-api.herokuapp.com',
-  kanx: 'https://kannxapi.herokuapp.com/'
+  kanx: 'https://kannxapi.herokuapp.com/',
+  males : 'https://malesin.xyz',
+  violetics : 'https://violetics.pw',
 }
-global.APIKeys = { // APIKey Here
-  // 'https://website': 'apikey'
-  'https://api.xteam.xyz': 'APIKEY',
+global.APIKeys = {
+  'https://api.xteam.xyz': 'NezukoTachibana281207',
   'https://anabotofc.herokuapp.com/': 'AnaBot',
-  'https://api.lolhuman.xyz': 'APIKEY',
+  'https://api.lolhuman.xyz': 'Papah-Chan',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
-  'https://api.zeks.xyz': 'APIKEY',
+  'https://api.zeks.xyz': 'apivinz',
   'https://pencarikode.xyz': 'pais',
   'https://api.neoxr.my.id' : '5VC9rvNx',
   'https://rest-beni.herokuapp.com' : 'benniismaelapikey',
@@ -130,22 +112,27 @@ global.APIKeys = { // APIKey Here
   'https://neoxr-api.herokuapp.com': 'yntkts',
   'https://server-api-rey.herokuapp.com': 'apirey',
   'https://botstyle-api.herokuapp.com': 'Fa2GhFnr',
-  'https://bsbt-api-rest.herokuapp.com': 'APIKEY',
+  'https://bsbt-api-rest.herokuapp.com': 'benniismael',
   'https://hardianto.xyz': 'hardianto',
   'https://zenzapis.xyz' : 'f9fccfcff1',
-  'https://hardianto-chan.herokuapp.com' : 'hardianto',
-  'https://leyscoders-api.herokuapp.com': 'APIKEY',
+  'https://ziy.herokuapp.com' : 'xZiyy',
+  'https://leyscoders-api.herokuapp.com': 'dappakntlll',
+  'https://violetics.pw': 'beta',
+
 }
-// Xteam
-global.xteamkey = 'APIKEY'
-// Xcoders
-global.xckey = 'BOhjM2hUVn'
-// KATA "APIKEY" GANTI DENGAN APIKEY MU SENDIRI
+/*Lolhuman*/
+global.lolkey = 'apikeylu'
+/*Xteam*/
+global.xteamkey = 'NezukoTachibana281207'
+/*Xcoders*/
+global.xckey = 'apikeylu'
+// FREE APIKEY, WAJIB SUBSCRIBE:V
+// kalau mau ganti apikey mu sendiri terserah
 
 /*⫘⫘⫘⫘ WATERMAK ⫘⫘⫘⫘⫘*/
 //GANTI JANGAN NGASAL.
-global.wm = '             「 赤 SILENCE - BOT ⁩இ 」' //Wm
-global.wm2 = '➳༻❀ Silence - Bot ❁ུ۪۪.;:୭̥.' //Name Wm
+global.wm = '       「 赤 SILENCE - BOT 」' //Wm
+global.wm2 = '➳༻❀ AngelDark ❁ུ۪۪.;:୭̥.' //Name Wm
 global.wm3 = '赤 SILENCE - BOT'
 global.hiasan = '꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦'
 global.botdate = `🗓️️ 𝗗𝗮𝘁𝗲: ${week} ${date}`
@@ -154,11 +141,11 @@ global.titlebot = '𝗬𝗧: Silence Official' //Ganti serah lu
 
 /*⫘⫘⫘⫘ LOGO ⫘⫘⫘⫘⫘*/
 // INI JUGA GANTI SETERAH MU
-global.logo = 'https://ibb.co/17RY7x9'
-global.thumb = 'https://telegra.ph/file/22abfec5e8c5b3e6596d1.jpg' //Thumbnail nya
+global.logo = 'https://ibb.co/17RY7x9'
+global.thumb = 'https://telegra.ph/file/5be97e4b95a677de7b366.jpg' //Thumbnail nya
 global.thumb2 = 'https://telegra.ph/file/312d5d7a5ad4d4f8b5d7a.jpg' //Thumbnail 2
 global.thumbbc = 'https://telegra.ph/file/3377bec81cd8614917d24.jpg' //Image Bcgcb
-global.giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
+global.giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
 global.flaaa = [
 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=water-logo&script=water-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextColor=%23000&shadowGlowColor=%23000&backgroundColor=%23000&text=',
 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=crafts-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&text=',
@@ -445,24 +432,28 @@ global.hwaifu = ['https://i.pinimg.com/originals/ed/34/f8/ed34f88af161e6278993e1
 
 /** Fake Reply */
 global.THUMBNAIL = await (await fetch(global.thumbbc)).buffer()
-global.judul = `Hari ${week}`
+global.judul = `Tanggal ${date}`
 global.body = `𝗪𝗔𝗞𝗧𝗨 : ${wib}`
 
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 //global.fla Jangan di ganti
 /*⫘⫘⫘⫘ LOADING ⫘⫘⫘⫘⫘*/
-global.wait = '```[ ! ] wait...```'
-global.eror = '⸨ Acsess Danied ⸩'
+global.stiker_wait = '[ ! ] Wait'
+global.wait = '[ ! ] Wait'
+global.eror = 'Akses Ditolak!!'
+global.benar = 'Good Job!'
+global.salah = 'Not Bad!'
+global.dikit = "Dikit Lagi, Semangat!!"
 
 /*⫘⫘⫘⫘ DOCUMENT ⫘⫘⫘⫘⫘*/
-global.dpptx = 'application/vnd.openxmlformats-officedocument.presentationml.presentation' 
-global.ddocx = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' 
-global.dxlsx = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' 
-global.dpdf = 'application/pdf' 
-global.drtf = 'text/rtf' 
-global.djson = 'application/json' 
+global.dpptx = 'application/vnd.openxmlformats-officedocument.presentationml.presentation' 
+global.ddocx = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' 
+global.dxlsx = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' 
+global.dpdf = 'application/pdf' 
+global.drtf = 'text/rtf' 
+global.djson = 'application/json' 
   
-global.thumbdoc = 'https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg'
+global.thumbdoc = 'https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg'
 
 /*⫘⫘⫘⫘ FAKE SIZE ⫘⫘⫘⫘⫘*/
 global.fsizedoc = '99999999999999' // 10TB
@@ -470,31 +461,31 @@ global.fpagedoc = '999' //Gausah di ganti.
 
 /*⫘⫘⫘⫘ BIO OWNER ⫘⫘⫘⫘⫘*/
 global.nameowner = 'AngelDark'
-global.umurowner = '20'
+global.umurowner = '21'
 global.asalowner = 'Yogyakarta, Jawa tengah'
-global.nomorowner = 'wa.me/19047502362'
+global.nomorowner = 'https://wa.me/79814212373'
 global.pacarowner = 'Ga ada pacar'
 /*⫘⫘⫘⫘ HIASAN ⫘⫘⫘⫘⫘*/
 // DEFAULT MENU
 global.dmenut = 'ଓ═┅═━–〈' //top
-global.dmenub = '┊↬' //body
+global.dmenub = '┊•' //body
 global.dmenub2 = '┊' //body for info cmd on Default menu
 global.dmenuf = '┗––––––––––✦' //footer
 
 // COMMAND MENU
-global.dashmenu = '┅━━━═┅═❏ *ღ 𝘿𝘼𝙎𝙃𝘽𝙊𝘼𝙍𝘿 ღ* ❏═┅═━━━┅'
+global.dashmenu = '┅━━━═┅═❏ *𝘿𝘼𝙎𝙃𝘽𝙊𝘼𝙍𝘿* ❏═┅═━━━┅'
 global.cmenut = '❏––––––『'                       //top
 global.cmenuh = '』––––––'                        //header
-global.cmenub = '┊✧'                            //body
+global.cmenub = '┊⌬'                            //body
 global.cmenuf = '┗━═┅═━––––––๑\n'                //footer
 global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     ' //after
 global.pmenus = '┊'              
 
-global.htki = '––––––⦅' // Hiasan Titile (KIRI)
-global.htka = '⦆––––––' // Hiasan Title  (KANAN)
+global.htki = '━━━⦅ ' // Hiasan Titile (KIRI)
+global.htka = ' ⦆━━━' // Hiasan Title  (KANAN)
 global.lopr = '🅟' //LOGO PREMIUM ON MENU.JS
 global.lolm = '🅛' //LOGO FREE ON MENU.JS
-global.htjava = 'இ'    //hiasan Doang :v
+global.htjava = '▢'    //hiasan Doang :v
 global.hsquere = ['⛶','❏','⫹⫺']
 
 
@@ -503,8 +494,8 @@ global.fsizedoc = '1'.repeat(10)
 global.fpagedoc = '1'.repeat(10)
 
 /*⫘⫘⫘⫘ STICKER ⫘⫘⫘⫘⫘*/
-global.stickpack = 'YT: Silence Ofc'
-global.stickauth = `© Silence BOT\nOfficial by Whatsapp\nNomor: ${global.nomorbot}`
+global.stickpack = 'Silence Bot'
+global.stickauth = `© AngelDark`
 global.packname = 'By AngelDark'
 
 
@@ -515,45 +506,118 @@ global.rpg = {
   emoticon(string) {
     string = string.toLowerCase()
     let emot = {
-      level: '📊',
-      limit: '🎫',
-      health: '❤️',
-      exp: '✨',
-      money: '💹',
-      bank: '🏦',
-      potion: '🥤',
-      diamond: '💎',
-      common: '📦',
-      uncommon: '🛍️',
-      mythic: '🎁',
-      legendary: '🗃️',
-      superior: '💼',
-      pet: '🔖',
-      trash: '🗑',
+      Fox: '🦊',
+      agility: '🤸‍♂️',
+      anggur: '🍇',
+      apel: '🍎',
+      aqua: '🥤',
+      arc: '🏹',
       armor: '🥼',
-      sword: '⚔️',
-      pickaxe: '⛏️',
-      fishingrod: '🎣',
-      wood: '🪵',
-      rock: '🪨',
-      string: '🕸️',
-      horse: '🐴',
-      cat: '🐱',
-      dog: '🐶',
-      fox: '🦊',
-      petFood: '🍖',
-      iron: '⛓️',
-      gold: '🪙',
+      bank: '🏦',
+      batu: '🧱',
+      berlian: '💎',
+      bibitanggur: '🍇',
+      bibitapel: '🍎',
+      bibitjeruk: '🍊',
+      bibitmangga: '🥭',
+      bibitpisang: '🍌',
+      botol: '🍾',
+      bow: '🏹',
+      bull: '🐃',
+      cat: '🐈',
+      centaur: '🎠',
+      chicken: '🐓',
+      coal: '⚱️',
+      common: '📦',
+      cow: '🐄',
+      crystal: '🔮',
+      darkcrystal: '♠️',
+      diamond: '💎',
+      dog: '🐕',
+      dragon: '🐉',
+      eleksirb: '🧪',
+      elephant: '🐘',
+      emasbatang: '🪙',
+      emasbiasa: '🥇',
       emerald: '❇️',
-      upgrader: '🧰'
-      
+      exp: '✉️',
+      fishingrod: '🎣',
+      foodpet: '🍱',
+      fox: '🦊',
+      gardenboc: '🗳️',
+      gardenboxs: '📦',
+      gems: '🍀',
+      giraffe: '🦒',
+      gold: '👑',
+      griffin: '🦒',
+      health: '❤️',
+      healtmonster: '❤‍🔥',
+      horse: '🐎',
+      intelligence: '🧠',
+      iron: '⛓️',
+      jeruk: '🍊',
+      kaleng: '🥫',
+      kardus: '📦',
+      kayu: '🪵',
+      ketake: '💿',
+      keygold: '🔑',
+      keyiron: '🗝️',
+      knife: '🔪',
+      koinexpg: '👛',
+      kucing: '🐈',
+      robo: '🤖',
+      wolf: '🐺',
+      kuda: '🐎',
+      kyubi: '🦊',
+      legendary: '🗃️',
+      level: '🧬',
+      joinlimit: '🧧',
+      limit: '🎫',
+      lion: '🦁',
+      magicwand: '⚕️',
+      makanancentaur: '🥗',
+      makanangriffin: '🥙',
+      makanankyubi: '🍗',
+      makanannaga: '🍖',
+      makananpet: '🥩',
+      makananphonix: '🧀',
+      mana: '🪄',
+      mangga: '🥭',
+      money: '💵',
+      mythic: '🗳️',
+      mythic: '🪄',
+      naga: '🐉',
+      pancingan: '🎣',
+      pet: '🎁',
+      petFood: '🍖',
+      phonix: '🦅',
+      pickaxe: '⛏️',
+      pisang: '🍌',
+      pointxp: '📧',
+      potion: '🥤',
+      rock: '🪨',
+      rubah: '🦊',
+      sampah: '🗑️',
+      serigala: '🐺',
+      snake: '🐍',
+      stamina: '⚡',
+      strength: '🦹‍♀️',
+      string: '🕸️',
+      superior: '💼',
+      sword: '⚔️',
+      tiger: '🐅',
+      tiketcoin: '🎟️',
+      trash: '🗑',
+      umpan: '🪱',
+      uncommon: '🎁',
+      upgrader: '🧰',
+      wood: '🪵'
     }
     let results = Object.keys(emot).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string))
     if (!results.length) return ''
     else return emot[results[0][0]]
   }
 }
-
 
 global.fpay = {
 	key: {
@@ -596,7 +660,7 @@ global.fpayment = (m) => {
 			requestFrom: (m !== null && m !== undefined) ? m.sender : '0@s.whatsapp.net',
 			noteMessage: {
 				extendedTextMessage: {
-					text: (m !== null && m !== undefined) ? m.text : 'Subs YT: FangzXD'
+					text: (m !== null && m !== undefined) ? m.text : 'Subs YT: Silence'
 				}
 			},
 			expiryTimestamp: 999999999,
@@ -619,7 +683,7 @@ watchFile(file, () => {
   import(`${file}?update=${Date.now()}`)
 })
 
-//------ FUNCTION 
- function pickRandom(list) { 
-   return list[Math.floor(list.length * Math.random())] 
+//------ FUNCTION 
+ function pickRandom(list) { 
+   return list[Math.floor(list.length * Math.random())] 
  }
