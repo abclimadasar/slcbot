@@ -41,17 +41,17 @@ function start(file) {
     align: 'center',
     colors: ['magenta']
   })
-  say('MEMUAT SCRIPT...', {
+  say('🌎 MEMUAT SOURCE...', {
     font: 'console',
     align: 'center',
     colors: ['green']
   })
-  say('MEMUAT FILE...', {
+  say('📑 MEMUAT PLUGINS...', {
     font: 'console',
     align: 'center',
     colors: ['green']
   })
-  say('SUDAH OWNER ✅', {
+  say('✅ DONE !', {
     font: 'console',
     align: 'center',
     colors: ['green']
@@ -62,7 +62,7 @@ function start(file) {
   })
   let p = fork()
   p.on('message', data => {
-    console.log('[⚠️]JARINGAN BURUK', data)
+    console.log('[⚠️] JARINGAN BURUK', data)
     switch (data) {
       case 'reset':
         p.process.kill()
@@ -76,7 +76,7 @@ function start(file) {
   })
   p.on('exit', (_, code) => {
     isRunning = false
-    console.error('❗MENINGGALKAN PERMAINAN:', code)
+    console.error('❗ EXITED WITH CODE:', code)
     if (code === 0) return
     watchFile(args[0], () => {
       unwatchFile(args[0])
