@@ -1,21 +1,21 @@
-let handler  = async (m, { conn, text }) => {
-   let [namagc, partici] = text.split('|')
-   let name = conn.getName(conn.user.jid)
-   const petik = '```'
-   if (!namagc) throw 'Format Salah!!!'
-   if (!partici) partici = `@${m.sender.split('@')[0]}`
-   if (!namagc) namagc = text
-   ha = await conn.groupCreate(namagc, conn.parseMention(partici))
-   m.reply(`${petik}Group Telah Dibuat @${m.sender.replace(/@.+/, '')}${petik}\n\n*Link GC : https://chat.whatsapp.com/${await conn.groupInviteCode(ha.gid)}*`)
+//import { bold } from "chalk"
+let handler = async (m, { conn, text }) => {
+   
+   if (!text) return m.reply('_Masukkan Nama Grup!_')
+   try{
+    m.reply(wait)
+    let group = await conn.groupCreate(text, [m.sender])
+    let link = await conn.groupInviteCode(group.gid)
+    let url = 'https://chat.whatsapp.com/' + link;
+ /// console.log(chalk.bold.red('Membuat Grup: ' + group.gid + '\nNama Grup: ' + text + '\n\nViolet'))
+    m.reply('_Berhasil Membuat Grup *' + text + '*_\n\n*Nama:* ' + text + '\n*ID:* ' + group.gid + '\n*Link:* ' + url)
+       } catch (e) {
+    m.reply(`Error`)
   }
-handler.help = ['buatgrup']
-handler.tags = ['owner', 'premium']
-handler.command = /^(buatgrup)$/i
-handler.premium = true
-handler.private = false
-
-handler.admin = false
-handler.botAdmin = false
-handler.fail = null
-
-export default handler 
+}
+handler.help = ['creategroup']
+handler.tags = ['owner']
+handler.command = /^((create|buat)(gc|grup|group))$/
+handler.owner = true
+handler.premium = false
+export default handler

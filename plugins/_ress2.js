@@ -13,7 +13,7 @@ export async function all(m) {
 if (m.isBaileys) return
     if (m.chat.endsWith('broadcast')) return
     try {
-    let TandaTanya = /^(kanna|Kanna|KANNA)$/i.test(m.text)
+    let TandaTanya = /^(kanna|fangz|fang|kana)$/i.test(m.text)
         if (TandaTanya && m.isGroup) {
             await this.sendMessage(m.chat, { sticker : stc, thumbnail: await( await fetch(pp)).buffer() , contextInfo:{  externalAdReply: { showAdAttribution: true,
 mediaType:  1,

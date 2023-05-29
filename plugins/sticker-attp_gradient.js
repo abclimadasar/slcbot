@@ -45,7 +45,7 @@ let urls = ['https://violetics.pw/api/canvas/quotes?apikey=beta&text=' + teks + 
 		rowId: usedPrefix + 'get ' + urls[v]
 	}))
 	let button = {
-		buttonText: `☂️ Tema Disini ☂️`,
+		buttonText: `⚜️ Tema Disini ⚜️`,
 		description: `⚡ Silakan pilih tema di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}

@@ -4,7 +4,7 @@ let handler = async (m, { conn, args }) => {
   })
   let name = '🌟 Premium'
   let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
-  let thumbPrem = `https://telegra.ph/file/0d8b6b1b9b4c9628e70ea.jpg`
+  let thumbPrem = `https://telegra.ph/file/006614e44a46f1b1af2b0.jpg`
   let premTime = global.db.data.users[m.sender].premiumTime
   let prem = global.db.data.users[m.sender].premium
   let waktu = clockString(`${premTime - new Date() * 1} `)

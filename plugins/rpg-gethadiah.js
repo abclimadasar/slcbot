@@ -1,23 +1,23 @@
 let handler = async (m, { conn }) => {
 let info = `
-*${htki} GET HADIAH ${htka}*
+*━━━━━▢ GET HADIAH ▢━━━━━*
 `
 const sections = [
    {
 	title: `✃ CLAIM`,
 	rows: [
-	    {title: "🌸Daily", rowId: '.daily', description: 'Hadiah per hari' },
-	    {title: "🌸Weekly", rowId: '.weekly', description: 'Hadiah per minggu' },
-	{title: "🌸Monthly", rowId: '.monthly', description: 'Hadiah per bulan' },
-	{title: "🌸Special", rowId: '.special', description: 'Hadiah special' },
+	    {title: "⚜️ Daily", rowId: '.daily', description: 'Hadiah per hari' },
+	    {title: "⚜️ Weekly", rowId: '.weekly', description: 'Hadiah per minggu' },
+	{title: "⚜️ Monthly", rowId: '.monthly', description: 'Hadiah per bulan' },
+	{title: "⚜️ Special", rowId: '.special', description: 'Hadiah special' },
 	]
     }, {
     title: `✃ INFO`,
 	rows: [
-	    {title: "💻INFO BOT", rowId: '.info', description: 'Info Silence BOT' },
-	    {title: "🗃️MENU", rowId: '.menu', description: 'Back to menu' },
-	{title: "👤OWNER", rowId: '.owner', description: 'Owner Silence BOT' },
-	{title: "💰SEWA BOT", rowId: '.sewa', description: 'Sewa Silence BOT' },
+	    {title: "💻 INFO BOT", rowId: '.info', description: 'Info Silence BOT' },
+	    {title: "🗃️ MENU", rowId: '.menu', description: 'Back to menu' },
+	{title: "👤 OWNER", rowId: '.owner', description: 'Owner Silence BOT' },
+	{title: "💰 SEWA BOT", rowId: '.sewa', description: 'Sewa Silence BOT' },
 	]
     },
 ]

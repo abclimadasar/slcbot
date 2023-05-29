@@ -3,7 +3,7 @@ import crypto from 'crypto'
 const xp_first_time = 2500
 const xp_link_creator = 15000
 const xp_bonus = {
-    5: 'Premium 7 Hari',
+    5: 40000,
    10: 100000,
    20: 250000,
    50: 1000000,
@@ -33,31 +33,27 @@ Seseorang telah menggunakan kode referal kamu
     let code = users[m.sender].ref_code = users[m.sender].ref_code || new Array(11).fill().map(() => [...'0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'][crypto.randomInt(62)]).join('')
     users[m.sender].ref_count = users[m.sender].ref_count ? users[m.sender].ref_count : 0
     let command_text = `${usedPrefix}ref ${code}`
-    let command_link = `${conn.user.jid.split('@')[0]}?text=${encodeURIComponent(command_text)}`
+    let command_link = `wa.me/${conn.user.jid.split('@')[0]}?text=${encodeURIComponent(command_text)}`
     let share_text = `
 Dapatkan ${xp_first_time} XP untuk yang menggunakan link/kode referal dibawah ini
 
-Referal Code: ${code}
+Referal Code: *${code}*
 
-
-Salin Link di bawah & Share ke teman kamu
-
-${botdate}
+${command_link}
 `.trim()
     m.reply(`
-*SYARAT & KETENTUAN*
-    
-
 Dapatkan ${xp_link_creator} XP untuk setiap pengguna baru yang menggunakan kode referal kamu
 ${users[m.sender].ref_count} orang telah menggunakan kode referal kamu
 
-Bagikan link kepada teman mu yang belum pernah menggunakan
-Bot ini.
-Jika anda mengirimkan Code ke orang yg sudah pernah menggunakan Bot ini
-maka referal tidak akan bisa di gunakan.
+Kode referal kamu: ${code}
+
+Bagikan link kepada teman: ${command_link}
+
+atau kirim pesan kepada teman wa.me/?text=${encodeURIComponent(share_text)}
+
+${Object.entries(xp_bonus).map(([count, xp]) => `${count} Orang = Bonus ${xp} XP`).join('\n')}
 `.trim())
-conn.sendHydrated(m.chat, bottime, share_text, null, 'https://www.whatsapp.com/otp/copy/'+'https://wa.me/' + command_link, "Salin Code", null,null, [['INVENTORY','.inv'],['PUSH EXP','.listexp']], m)
-}
+  }
 }
 handler.help = ['ref']
 handler.tags = ['main', 'xp']

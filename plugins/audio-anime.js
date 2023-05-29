@@ -1610,3 +1610,21 @@ handler.command = ['ahh', 'ara', 'ganbare', 'konichiwa', 'nani', 'rikka', 'ultra
 handler.tags = ['audio']
 
 export default handler
+
+function ucapan() {
+  const time = moment.tz('Asia/Jakarta').format('HH')
+  let res = "Selamat DiniHari ☀️"
+  if (time >= 4) {
+    res = "Selamat Pagi 🌄"
+  }
+  if (time >= 10) {
+    res = "Selamat Siang ☀️"
+  }
+  if (time >= 15) {
+    res = "Selamat Sore 🌇"
+  }
+  if (time >= 18) {
+    res = "Selamat Malam 🌙"
+  }
+  return res
+}

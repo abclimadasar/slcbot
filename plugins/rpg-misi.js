@@ -1,8 +1,8 @@
 let handler = async (m, { conn }) => {
 let info = `
-*${htki} MISI ${htka}*
+*━━━━━▢ MISI ▢━━━━━*
 
-©2022 FangzBot Official 
+©2022 SilenceBot Official 
 `
 const sections = [
    {
@@ -23,7 +23,7 @@ const listMessage = {
   text: ' ',
   footer: info,
   title: null,
-  buttonText: "🌸MISI",
+  buttonText: "⚜️ MISI",
   sections
 }
 await conn.sendMessage(m.chat, listMessage, { quoted: m})

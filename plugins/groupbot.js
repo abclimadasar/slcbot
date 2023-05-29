@@ -4,9 +4,11 @@ let info = `
 `
 const sections = [
    {
-	title: `𝗝𝗢𝗜𝗡 𝗞𝗘 𝗚𝗥𝗨𝗣 𝗢𝗙𝗙𝗜𝗖𝗜𝗔𝗟 𝗦𝗛𝗜𝗡𝗡 𝗕𝗢𝗧*\n\n\n━━━〔 Dᴏɴ'ᴛ ғᴏʀɢᴇᴛ Dᴏɴᴀᴛɪᴏɴ 〕━━━`,
+	title: `𝗝𝗢𝗜𝗡 𝗞𝗘 𝗚𝗥𝗨𝗣 𝗢𝗙𝗙𝗜𝗖𝗜𝗔𝗟 𝗦𝗜𝗟𝗘𝗡𝗖𝗘 𝗕𝗢𝗧*\n\n\n━━━〔 Dᴏɴ'ᴛ ғᴏʀɢᴇᴛ Dᴏɴᴀᴛɪᴏɴ 〕━━━`,
 	rows: [
 	    {title: '💌 › Group Silence BOT', description: "Group Utama Silence BOT", rowId:".gcbot"},
+        //{title: '✉️ › Grup TokoBot', description: "Group Kedua", rowId:".gcbot2"},
+        //{title: '📧 › Group Full Bot', description: "Gruop Ketiga", rowId:".gcbot3"},
         {title: '🎐 › Owner', description: "Creator Silence BOT >ω<", rowId:".owner"},
         {title: '🧿 › Info Silence BOT', description: "Info Silence BOT >ω<", rowId:".info"},
         {title: '📮 › Donasi', description: "Donasi Untuk Silence ≧▽≦", rowId:".donasi"},

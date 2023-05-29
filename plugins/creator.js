@@ -1,35 +1,27 @@
-import fs from 'fs';
-import crypto from 'crypto'
-let handler = async (m, { conn, text, usedPrefix }) => {
+import fetch from "node-fetch"
+import { generateWAMessageFromContent } from "@adiwajshing/baileys"
 
-    let sewa = `
-  〔 llı OWNER ${namebot} ıll 〕
-    
-Nama: ${nameowner}
-Umur: ${umurowner}
-Asal: ${asalowner}
-Pacar: ${pacarowner}
+let handler  = async (m, { conn }) => {
 
-Nomor: ${nomorowner}
+ let thumb = 'https://telegra.ph/file/b052967255f6381d1cc0b.jpg'
+ 
+let msg = await generateWAMessageFromContent(m.chat, { locationMessage: {
+  degreesLatitude: 0,
+  degreesLongitude: 0,
+  name: 'Click untuk chat owner',
+  address: botdate,
+  url: nomorowner,
+  isLive: true,
+  accuracyInMeters: 0,
+  speedInMps: 0,
+  degreesClockwiseFromMagneticNorth: 2,
+  comment: 'tes',
+  jpegThumbnail: await( await fetch(thumb)).buffer()
+}}, { quoted: fpay })
 
-${botdate}
-`
-
-    let img1 = fs.readFileSync('./img/atas.png');
-    let img2 = fs.readFileSync('./img/bawah.png');
-    return conn.sendButton(m.chat, hiasan, sewa, img1, [["menu", usedPrefix + "menu"], ["profile", usedPrefix + "profile"]], m, {
-        contextInfo: {
-            externalAdReply: {
-                mediaUrl: "https://instagram.com/aguzfamilia",
-                mediaType: "VIDEO",
-                title: hiasan,
-                body: bottime,
-                previewType: 0,
-                thumbnail: img1
-            }
-        }
-    })
+return conn.relayMessage(m.chat, msg.message, {})
 }
+
 handler.help = ['owner']
 handler.tags = ['Bot']
 

@@ -22,7 +22,7 @@ const listMessage = {
   text: `⚡ Silakan pilih Fishing di bawah...`,
   footer: global.wm,
   title: `⎔───「 ${command} 」───⎔`,
-  buttonText: `☂️ Klik Disini ☂️`,
+  buttonText: `⚜️ Klik Disini ⚜️`,
   sections
 }
 //
@@ -516,7 +516,7 @@ ${ usedPrefix }cook`
                        } else conn.reply(m.chat, `*Sepertinya Anda Sudah Lelah*\n*Silahkan Istirahat Sejenak Sekitar* ${timere}\n*Untuk Bisa Melanjutkan Memancing Lagi*`, m)
                  break
                        default:
-                        return conn.sendMessage(m.chat, listMessage, {quoted: fgif})
+                        return conn.sendMessage(m.chat, listMessage, {quoted: fakes})
                 }
         }
     } catch (e) {

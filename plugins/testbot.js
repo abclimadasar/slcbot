@@ -1,34 +1,30 @@
-let handler = async (m, { conn }) => {
-let info = `
-*${htki} ONLINE ${htka}*
-          
-   📛Bot Online Nih:v
-`
-const sections = [
-   {
-    title: `✃ INFO`,
-	rows: [
-	    {title: "🗃️Menu", rowId: '.menu', description: 'Event Silence BOT' },
-	{title: "🎀YT Bot", rowId: '.ytbot', description: 'Youtube Bot' },
-	]
-    }, {
-    title: `✃ INFO`,
-	rows: [
-	    {title: "🌸Sapa Bot", rowId: '.salken', description: 'Discount Pembayaran' },
-	    ]
-        },
-]
+import { generateWAMessageFromContent } from "@adiwajshing/baileys"
 
-const listMessage = {
-  text: ' ',
-  footer: info,
-  title: null,
-  buttonText: "SILENCE BOT🎐",
-  sections
+
+
+let handler  = async (m, { conn }) => {
+
+
+
+let prep = generateWAMessageFromContent(m.chat, { liveLocationMessage: { 
+
+degreesLatitude: 34.672314, degreesLongitude: 135.484802,
+
+caption: 'Bot sudah aktif_-',
+
+sequenceNumber: 1656662972682001, timeOffset: 8600, jpegThumbnail: null
+
+}}, { quoted: m
+
+					})
+
+
+
+return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })
+
 }
-await conn.sendMessage(m.chat, listMessage, { quoted: m})
-//conn.sendHydrated(m.chat, info, wm, null, sgc, "🌎 Group Official", null,null, [['Owner','.owner']], m)
-}
+
+
 
 handler.customPrefix = /^(bot)$/i
 handler.command = new RegExp

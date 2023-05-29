@@ -6,7 +6,7 @@ let list = Object.entries(global.db.data.users)
 	list.map(([user, data], i) => (Number(data.limit = lim)))
 		conn.reply(m.chat, `*berhasil direset ${lim} / user*`, m)
 		}
-    let thumbLimit = `https://telegra.ph/file/39146a151c83b2f015dbe.jpg`
+    let thumbLimit = `https://telegra.ph/file/e26524fd8d6192c362cc4.jpg`
 		
     let who
     if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
@@ -15,13 +15,13 @@ let list = Object.entries(global.db.data.users)
     let ke2 = global.db.data.users[who].exp
     let ke3 = global.db.data.users[who].money
     
-    conn.sendButton(m.chat, bottime,  `LIMIT YANG MAMU MILIKI
-🎫️Sisa Limit
+    conn.sendButton(m.chat, bottime,  `LIMIT YANG KAMU MILIKI
+🎫️ Sisa Limit
 *${ke1}*
 
 -------------------
 
-🎟️Sisa Join limit
+🎟️ Sisa Join limit
 *${ke2}*
 `, thumbLimit, [
         ['BUY LIMIT', '.buylimit'],

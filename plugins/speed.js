@@ -53,14 +53,14 @@ let handler = async (m, { conn, usedPrefix, isRowner}) => {
   await m.reply(`「▰▰▰▱▱▱▱▱▱▱」Loading...`)
   let neww = performance.now()
   let speed = neww - old
-  let caption = `${htki} S P E E D ${htka}
+  let caption = `⌬  S P E E D 
 ${Math.round(neww - old)} ms
 ${speed} ms
 
-${htjava} R U N T I M E
+⌬  R U N T I M E
 ${muptime}
 `
-await conn.sendHydrated(m.chat, hiasan, caption, thumbnailUrl.getRandom(), swb, 'Support Me', null, null, [
+await conn.sendButton(m.chat, hiasan, caption, thumbnailUrl.getRandom(), [
 [`DOWNLOAD`, `${usedPrefix}testspeed`],
 [`STATISTIC`, `${usedPrefix}botinfo`]
 ], m)
@@ -79,5 +79,5 @@ function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return ['\n' + d, ' Days ☀️\n ', h, ' Hours 🕐\n ', m, ' Minute ⏰\n ', s, ' Second ⏱️ '].map(v => v.toString().padStart(2, 0)).join('')
+  return ['\n ' + d, ' Days ☀️\n ', h, ' Hours 🕐\n ', m, ' Minute ⏰\n ', s, ' Second ⏱️ '].map(v => v.toString().padStart(2, 0)).join('')
 }

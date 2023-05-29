@@ -18,7 +18,7 @@ mediaType:  1,
 mediaUrl: sig,
 title: 'Apa sih Banh?',
 body: bottime,
-sourceUrl: 'https://toko.ly/TokoBot',
+sourceUrl: 'https://linktr.ee/whatsappbotz',
 thumbnail: await( await fetch(pp)).buffer()
   }
  }}, { quoted: m })

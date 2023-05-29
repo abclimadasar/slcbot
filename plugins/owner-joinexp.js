@@ -1,5 +1,5 @@
 let handler = async (m, { conn, text, usedPrefix, args, participants }) => {
-  let thumbJoin = `https://telegra.ph/file/1715ee117c311c93c170f.jpg`
+  let thumbJoin = `https://telegra.ph/file/372dfd0659390e50fe7d9.jpg`
   var time = global.db.data.users[m.sender].lastjoin + 86400000
   var linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
   var delay = time => new Promise(res => setTimeout(res, time))

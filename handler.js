@@ -1350,7 +1350,7 @@ conn.sendButtonImg(id, `${pickRandom(flaaa2)}` + `Congratulation ` + '@user', 'S
      }}
   })*/
             break
-     } 
+     } 
  }
 
 /**
@@ -1441,4 +1441,3 @@ watchFile(file, async () => {
     console.log(chalk.redBright("Update 'handler.js'"))
     if (global.reloadHandler) console.log(await global.reloadHandler())
 }) 
-//dahulukala

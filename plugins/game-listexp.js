@@ -21,18 +21,18 @@ Selamat bermain & Mencari exp
 `
 const sections = [
    {
-	title: `❪ LIST`,
+	title: `${htki} LIST ${htka}`,
 	rows: [
-	    {title: "┈┈┈┈ Tebak Kata ┈┈┈┈", rowId: '.tebakkata', description: '╰► Push Exp' },
-	    {title: "┈┈┈┈ Tebak Gambar ┈┈┈┈", rowId: '.tebakgambar', description: '╰► Push Exp' },
-	    {title: "┈┈┈┈ Tebak Lagu ┈┈┈┈", rowId: '.tebaklagu', description: '╰► Push Exp' },
-	{title: "┈┈┈┈ Tebak Jenaka ┈┈┈┈", rowId: '.tebakjenaka', description: '╰► Push Exp' },
-	{title: "┈┈┈┈ Tebak Logo ┈┈┈┈", rowId: '.tebaklogo', description: '╰► Push Exp' }
+	    {title: " Tebak Kata ", rowId: '.tebakkata', description: '╰► Push Exp' },
+	    {title: " Tebak Gambar ", rowId: '.tebakgambar', description: '╰► Push Exp' },
+	    {title: " Tebak Lagu ", rowId: '.tebaklagu', description: '╰► Push Exp' },
+	{title: " Tebak Jenaka ", rowId: '.tebakjenaka', description: '╰► Push Exp' },
+	{title: " Tebak Logo ", rowId: '.tebaklogo', description: '╰► Push Exp' }
 	]
     }, {
-	title: `❪ UNDANG TEMAN`,
+	title: `${htki} UNDANG TEMAN ${htka}`,
 	rows: [
-	    {title: "┈┈┈┈ Referal ┈┈┈┈", rowId: '.ref', description: '╰► Undang teman mu, agar bisa mendapatkan Ribuan Exp' },
+	    {title: " Referal ", rowId: '.ref', description: '╰► Undang teman mu, agar bisa mendapatkan Ribuan Exp' },
 	]
     },
 ]

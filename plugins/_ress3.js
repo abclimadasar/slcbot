@@ -20,7 +20,7 @@ mediaType:  1,
 mediaUrl: sig,
 title: 'KENAPA ❔',
 body: bottime,
-sourceUrl: 'https://chat.whatsapp.com/HpxyS6b45SoGIKG7LHddiM',
+sourceUrl: 'https://chat.whatsapp.com/I2OK9w2mkIpKngLpFs0i93',
 thumbnail: await( await fetch(pp)).buffer()
   }
  }}, { quoted: m })

@@ -72,37 +72,27 @@ let handler = async (m, {
 		global.db.data.users[m.sender].ayam += rbrb12
 
 		setTimeout(() => {
-			conn.sendHydrated(m.chat, hsl, botdate, null, null, null, null, null, [
-      [null, null]
-    ], null)
+			m.reply(`${hsl}`)
 		}, 20000)
 
 		setTimeout(() => {
-			conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Nah ini dia`, botdate, null, null, null, null, null, [
-      [null, null]
-    ], null)
+			m.reply(`Nah ini dia`)
 		}, 18000)
 
 		setTimeout(() => {
-			conn.sendHydrated(m.chat, `${conn.getName(m.sender)} ......`, botdate, null, null, null, null, null, [
-      [null, null]
-    ], null)
+			m.reply(`${conn.getName(m.sender)} ......`)
 		}, 15000)
 
 		setTimeout(() => {
-			conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Dapet nih..`, botdate, null, null, null, null, null, [
-      [null, null]
-    ], null)
+			m.reply(`${conn.getName(m.sender)} Dapet nih..`)
 		}, 14000)
 
 		setTimeout(() => {
-			conn.sendHydrated(m.chat, `${conn.getName(m.sender)} Sedang berburu...`, botdate, null, null, null, null, null, [
-      [null, null]
-    ], null)
+			m.reply(`${conn.getName(m.sender)} Sedang berburu...`)
 		}, 0)
-		user.lastberburu = new Date * 1
-	} else conn.sendButton(m.chat, `\n*Sepertinya Anda Sudah Kecapekan*\n*Silahkan Istirahat dulu sekitar* ${timers}\n*Untuk bisa melanjutkan berburu*\n`, author, null, [
-		['Kandang', '.kandang']
+		user.lastberbru = new Date * 1
+	} else conn.sendButton(m.chat, `\n*Sepertinya Anda Sudah Kecapekan*\n*Silahkan Istirahat dulu sekitar* ${timers}\n*Untuk bisa melanjutkan berburu*\n`, author, giflogo, [
+		['KANDANG', '.kandang']
 	], m)
 }
 handler.help = ['berburu']

@@ -24,7 +24,7 @@ category: ${v.category}
     }).join(`\n\n ${htki} YAY ${htka} \n\n`)
     await conn.sendButton(m.chat, str, wm, f.images[0].thumb_url, [
                 ['PINTEREST', '/pinterest ' + text],
-                ['\n\n\n Subscribe FangzXD', 'Huuu']
+                ['\n\n\n Subscribe Silence Official', 'Huuu']
             ], m, {
             fileLength: fsizedoc,
             seconds: fsizedoc,

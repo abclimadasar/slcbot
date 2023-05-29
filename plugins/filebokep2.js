@@ -3,11 +3,11 @@
 let handler  = async (m, { conn }) => {
 	
 	await m.reply('[!] Please Wait, Tunggu Sebentar')
-  conn.reply(m.chat,`${pickRandom(global.bokep)}`, m)
+  conn.reply(m.chat,`${pickRandom(global.bkp)}`, m)
 }
-handler.help = ['filebokep']
+handler.help = ['fbokep']
 handler.tags = ['internet']
-handler.command = /^(filebokep)$/i
+handler.command = /^(fbokep)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = true
@@ -26,7 +26,7 @@ function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
 
-global.bokep = [
+global.bkp = [
 'Nama : DilaPye Colmek\nFoto : -\nVideo : 1\nSize : 90 MB\nDurasi : 5 Menit\nKualitas : HD\nRate : ⭐⭐⭐⭐\n\nDownload Link\nDownload : https://drive.google.com/file/d/1We9TeG1whjz2bmNCrahctK1-Hiy3BtWN/view \n PASSWORD FILE : AA18+#29',
 'Nama : Missluttyv SMA\nFoto : -\nVideo : 3\nSize : 74 MB\nDurasi : - Menit\nKualitas : HD\nRate : ⭐⭐⭐\n\nDownload Link\nDownload : https://drive.google.com/file/d/1TodhXRAHt6MHMqS2-3DYmCQoIFe7yuI-/view \nPASSWORD FILE : AA18+#21',
 'Nama : Arce\nFoto : 114\nVideo : 16\bSize : 64 MB\nDurasi : - Menit\nKualitas : HD\nRate : ⭐⭐⭐⭐\n\nDownload Link\nDownload : https://drive.google.com/file/d/1SwXbmd2sXnYSNYmn_tdCiaBsHHXjYvQM/view \nPASSWORD FILE : AA18+#6',

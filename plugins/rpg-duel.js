@@ -26,14 +26,14 @@ let handler = async ( m, { conn, args, command}) => {
      let mentionedJid = [m.sender]
 
        if (new Date - user.lastduel > 300000) {
-      conn.sendButton(m.chat, pler, wm, null, [[`Ya`, `+dya`], [`No`, `+dno`]], m, { mentions: conn.parseMention(mentionedJid) })
+      conn.send2Button(m.chat, pler, `Games wabot`, `Ya`, `.dya`, `No`, `.dno`, m, false, { contextInfo: { mentionedJid }})
 
-      } else conn.reply( m.chat, `Kamu Sudah Berduel Tunggu hingga ${timers}`, m)
+      } else conn.reply( m.chat, `Kamu Sudah Berduel Tunggu hingga *${timers}*`, m)
      }
 
      if (/dya/.test(command)) {
-     let kenal = !who.includes(m.sender)
-     if(kenal) throw 'Lu siapa?\nkok ikut kut mau duel'
+     //let kenal = !who.includes(m.sender)
+     //if(kenal) throw 'Lu siapa?\nkok ikut kut mau duel'
      user.lastduel = new Date * 1
      if (Aku > Kamu) {
        user.money -= 900
@@ -53,14 +53,14 @@ let handler = async ( m, { conn, args, command}) => {
      }
    }
    if (/dno/.test(command)) {
-   let kenal = !who.includes(m.sender)
-   if(kenal) return conn.sendButton(m.chat, `Lu siapa?\nkok ikut kut mau duel`, `Sesion`, null, [[`NO`, `.dno`]], m)
+   //let kenal = !who.includes(m.sender)
+   //if(kenal) return conn.sendButton(m.chat, `Lu siapa?\nkok ikut kut mau duel`, `Sesion`, `NO`, `.dno`, m)
     //if (!who) return m.reply('tag yg ingin di ajak duel!')
     conn.reply( m.chat, `@${who.split("@")[0]} Membatalkan Ajakan Duel`, m)
     delete conn.duel[m.sender]
    }
  } catch (e) {
-   //return conn.sendBut( m.chat, `Sepertinya ada bug`, `laporkan ke owner`, `Kanjut Badag`, `+bug duel ${e.stack}`, m)
+   //return conn.sendButton( m.chat, `Sepertinya ada bug`, `laporkan ke owner`, `Kanjut Badag`, `+bug duel ${e.stack}`, m)
    return m.reply(`${e}`)
  }
 }

@@ -92,4 +92,6 @@ handler.help = ['caribokep', 'caribokep2', 'dlbokep'].map(v => v + ' <app>')
 handler.command = ['caribokep', 'caribokep2', 'dlbokep']
 handler.tags = ['nsfw']
 
+handler.premium = true
+
 export default handler

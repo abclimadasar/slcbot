@@ -16,7 +16,7 @@ let row = Object.keys(lis).map((v, index) => ({
 		rowId: usedPrefix + 'oxy ' + lis[v] + ' ' + text
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Disini ☂️`,
+		buttonText: `⚜️ ${command} Disini ⚜️`,
 		description: `⚡ ${name} Silakan pilih ${command} di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -31,7 +31,7 @@ let row = Object.keys(lis).map((v, index) => ({
 		rowId: usedPrefix + 'oxy2 ' + lis[v] + '|' + teksnya + '|' + teksnya2
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Disini ☂️`,
+		buttonText: `⚜️ ${command} Disini ⚜️`,
 		description: `⚡ ${name} Silakan pilih ${command} di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -103,7 +103,7 @@ let row = Object.keys(lis).map((v, index) => ({
 		rowId: usedPrefix + 'oxyx ' + lis[v] + ' ' + text
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Disini ☂️`,
+		buttonText: `⚜️ ${command} Disini ⚜️`,
 		description: `⚡ ${name} Silakan pilih ${command} di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -118,7 +118,7 @@ let row = Object.keys(lis).map((v, index) => ({
 		rowId: usedPrefix + 'oxyx2 ' + lis[v] + '|' + teksnya + '|' + teksnya2
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Disini ☂️`,
+		buttonText: `⚜️ ${command} Disini ⚜️`,
 		description: `⚡ ${name} Silakan pilih ${command} di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -162,7 +162,7 @@ let row = Object.keys(lis).map((v, index) => ({
 		rowId: usedPrefix + 'pfunia ' + lis[v] + ' ' + text
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Disini ☂️`,
+		buttonText: `⚜️ ${command} Disini ⚜️`,
 		description: `⚡ ${name} Silakan pilih ${command} di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -183,7 +183,7 @@ let row = Object.keys(lis).map((v, index) => ({
 		rowId: usedPrefix + 'pfunia2 ' + lis[v] + '|' + teksnya + '|' + teksnya2
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Disini ☂️`,
+		buttonText: `⚜️ ${command} Disini ⚜️`,
 		description: `⚡ ${name} Silakan pilih ${command} di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -227,7 +227,7 @@ let row = Object.keys(lis).map((v, index) => ({
 		rowId: usedPrefix + 'textpro ' + lis[v] + ' ' + text
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Disini ☂️`,
+		buttonText: `⚜️ ${command} Disini ⚜️`,
 		description: `⚡ ${name} Silakan pilih ${command} di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -247,7 +247,7 @@ let row = Object.keys(lis).map((v, index) => ({
 		rowId: usedPrefix + 'textpro2 ' + lis[v] + '|' + teksnya + '|' + teksnya2
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Disini ☂️`,
+		buttonText: `⚜️ ${command} Disini ⚜️`,
 		description: `⚡ ${name} Silakan pilih ${command} di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -469,7 +469,7 @@ let row = Object.keys(lis).map((v, index) => ({
 		rowId: usedPrefix + 'textprox ' + lis[v] + ' ' + text
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Disini ☂️`,
+		buttonText: `⚜️ ${command} Disini ⚜️`,
 		description: `⚡ ${name} Silakan pilih ${command} di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -513,7 +513,7 @@ let row = Object.keys(lis).map((v, index) => ({
 		rowId: usedPrefix + 'textprox2 ' + lis[v] + '|' + teksnya + '|' + teksnya2
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Disini ☂️`,
+		buttonText: `⚜️ ${command} Disini ⚜️`,
 		description: `⚡ ${name} Silakan pilih ${command} di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -565,7 +565,7 @@ let row = Object.keys(lis).map((v, index) => ({
 		rowId: usedPrefix + 'epho ' + lis[v] + ' ' + text
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Disini ☂️`,
+		buttonText: `⚜️ ${command} Disini ⚜️`,
 		description: `⚡ ${name} Silakan pilih ${command} di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -584,7 +584,7 @@ let row = Object.keys(lis).map((v, index) => ({
 		rowId: usedPrefix + 'epho2 ' + lis[v] + '|' + teksnya + '|' + teksnya2
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Disini ☂️`,
+		buttonText: `⚜️ ${command} Disini ⚜️`,
 		description: `⚡ ${name} Silakan pilih ${command} di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -882,7 +882,7 @@ let row = Object.keys(lis).map((v, index) => ({
 		rowId: usedPrefix + 'ephotox ' + lis[v] + ' ' + text
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Disini ☂️`,
+		buttonText: `⚜️ ${command} Disini ⚜️`,
 		description: `⚡ ${name} Silakan pilih ${command} di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -961,7 +961,7 @@ let row = Object.keys(lis).map((v, index) => ({
 		rowId: usedPrefix + 'ephotox2 ' + lis[v] + '|' + teksnya + '|' + teksnya2
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Disini ☂️`,
+		buttonText: `⚜️ ${command} Disini ⚜️`,
 		description: `⚡ ${name} Silakan pilih ${command} di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}

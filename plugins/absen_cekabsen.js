@@ -1,4 +1,3 @@
-
 let handler = async (m, { conn, groupMetadata, usedPrefix }) => {
     let imgr = flaaa.getRandom()
     let id = m.chat
@@ -25,9 +24,7 @@ ${dmenut}
 ${list}
 ${cmenua}
 `
-`
-await conn.sendButton(m.chat, caption, author, `${imgr + 'List Absen'}`, [['HADIR', `${usedPrefix}absen`], ['MENU', `${usedPrefix}menu`]], m, { mentions: conn.parseMention(caption) })
-
+await conn.sendButton(m.chat, botdate, caption, `${imgr + 'List Absen'}`, [['HADIR', `${usedPrefix}absen`], ['MENU', `${usedPrefix}menu`]], m, { mentions: conn.parseMention(caption) })
 }
 handler.help = ['cekabsen']
 handler.tags = ['absen']

@@ -1,6 +1,6 @@
 let handler = async (m, { conn }) => {
 let info = `
-*${htki} IMUNE ${htka}*
+*━━━━━▢ IMUNE ▢━━━━━*
           
  
           
@@ -12,15 +12,15 @@ const sections = [
    {
     title: `✃ INFO`,
 	rows: [
-	    {title: "🔮WhatsApp Imune 1", rowId: '.waimune1', description: 'Jangan lupa Subs Yt SILENCE OFFICIAL' },
-	    {title: "🔮WhatsApp Imune 2", rowId: '.waimune2', description: 'Jangan lupa subs Yt SILENCE OFFICIAL' },
-	{title: "🔮WhatsApp Gb Kebal 1", rowId: '.wagb1', description: 'Jangan lupa subs Yt SILENCE OFFICIAL' },
-	{title: "🔮WhatsApp Gb Kebal 2", rowId: '.wagb2', description: 'Download WhatsApp Kebal' },
+	    {title: "🔮 WhatsApp Imune 1", rowId: '.waimune1', description: 'Silence WhatsApp Bot' },
+	    {title: "🔮 WhatsApp Imune 2", rowId: '.waimune2', description: 'Silence WhatsApp Bot' },
+	{title: "🔮 WhatsApp Gb Kebal 1", rowId: '.wagb1', description: 'Silence WhatsApp Bot' },
+	{title: "🔮 WhatsApp Gb Kebal 2", rowId: '.wagb2', description: 'Download WhatsApp Kebal' },
 	]
     }, {
     title: `✃ BUY`,
 	rows: [
-	    {title: "😈AngelDark", rowId: '.owner', description: 'Pembuat Bot' },
+	    {title: "😈 AngelDark", rowId: '.owner', description: 'Pembuat Bot' },
 	    ]
         },
 ]
@@ -29,7 +29,7 @@ const listMessage = {
   text: ' ',
   footer: info,
   title: null,
-  buttonText: "📛Download",
+  buttonText: "📛 Download",
   sections
 }
 await conn.sendMessage(m.chat, listMessage, { quoted: m})

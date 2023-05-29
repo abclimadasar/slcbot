@@ -1,29 +1,26 @@
-import fetch from "node-fetch"
-import { generateWAMessageFromContent } from "@adiwajshing/baileys"
+import fs from 'fs';
+let handler = async (m, { conn, text, usedPrefix }) => {
 
-let handler  = async (m, { conn }) => {
-
- let thumbnya = 'https://telegra.ph/file/a9becaeb3deedfd9ba15b.jpg'
-
-let msg = await generateWAMessageFromContent(m.chat, { locationMessage: {
-  degreesLatitude: 0,
-  degreesLongitude: 0,
-  name: '𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘',
-  address: 'Click Text berwarna Biru\n\nNge tensnenwkdn',
-  url: `https://saweria.co/FangzBot`,
-  isLive: true,
-  accuracyInMeters: 0,
-  speedInMps: 0,
-  degreesClockwiseFromMagneticNorth: 2,
-  comment: '',
-  jpegThumbnail: await( await fetch(thumbnya)).buffer()
-}}, { quoted: m })
-
-return conn.relayMessage(m.chat, msg.message, {})
+    let img = fs.readFileSync('./thumbnail.jpg');
+    let img2 = 'https://telegra.ph/file/9153e420426a8ae0e32ee.jpg'
+    return conn.sendButton(m.chat, 'Scan QRIS Di Atas\nDonasi Minimal 500P :v', donate, img2, [["MENU", usedPrefix + "menu"], ["OWNER", usedPrefix + "owner"]], m, {
+        contextInfo: {
+            externalAdReply: {
+                mediaUrl: "https://instagram.com/eabdalmufid_",
+                mediaType: "VIDEO",
+                title: 'Donasi To Silence',
+                body: bottime,
+                previewType: 0,
+                thumbnail: img
+            }
+        }
+    })
 }
-
 handler.help = ['donasi']
+
 handler.tags = ['info']
-handler.command = /^(donasi)$/i
+
+handler.command = /^(donasi|donate)$/i
+
 
 export default handler

@@ -51,12 +51,12 @@ let handler = async (m, { conn, usedPrefix, __dirname, text, command }) => {
   let old = performance.now()
   let neww = performance.now()
   let speed = neww - old
-    conn.sendHydrated(m.chat, 
+    conn.sendButton(m.chat, 
     '*––––––『 BOT INFO 』––––––*', 
 `🤖 ɴᴀᴍᴇ: ${_package.name}
 🧩 ᴠᴇʀsɪᴏɴ: ${_package.version}
 📚 ʟɪʙʀᴀʀʏ: ${_package.description}
-👩‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ: Fangz
+👩‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ: AngelDark
 
 ⏳ ᴜᴩᴛɪᴍᴇ: ${uptime}
 📈 ᴅᴀᴛᴀʙᴀsᴇ: ${totalreg}
@@ -74,7 +74,7 @@ let handler = async (m, { conn, usedPrefix, __dirname, text, command }) => {
 ⮕ ${groupsIn.length - groupsIn.length} - Groups Left
 ⮕ ${chats.length - groupsIn.length} - Personal Chats
 ⮕ ${chats.length} - Total Chats
-`.trim(), './media/botinfo.jpg', 'https://fangzbot.websites.co.in/', '🎀ʙᴏᴛ sᴄʀɪᴩᴛ', null, null, [
+`.trim(), './media/botinfo.jpg', [
 [`👑ᴏᴡɴᴇʀ`, `${usedPrefix}owner`],
 [`💱ᴅᴏɴᴀᴛᴇ`, `${usedPrefix}donate`]
 ], m, {asLocation: true})

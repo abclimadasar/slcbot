@@ -3,6 +3,7 @@ import fetch from 'node-fetch'
 import fs from 'fs'
 
 let handler = async (m, { conn, usedPrefix }) => {
+	let imgr = flaaa.getRandom()
 	
 	let { lasthourly, lastberburu, lastbansos, lastadventure, lastfishing, lastwar, lastduel, lastmining, lastdungeon, lastclaim, lastweekly, lastmonthly } = global.db.data.users[m.sender]
 	
@@ -108,7 +109,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 ⚠️ *Warn:* ${warn}
 ⛔ *Banned:* No
 `.trim()
-    await conn.sendButton(m.chat, str, wm2, null, [[`Inventory`, `.inv`, `Profile`, `.profile`]], m)
+    await conn.sendButton(m.chat, botdate, str, `${imgr + 'Cooldown'}`, [['KERJA', '.kerja', 'PROFILE', '.profile']], fpay)
 }
 handler.help = ['cd','cooldown']
 handler.tags = ['rpg']
@@ -118,4 +119,3 @@ export default handler
 
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4201)
-

@@ -161,5 +161,5 @@ await conn.sendButton(m.chat, caption, wm, '🔙 Menu', '.menu', m)
 }
 }
 handler.command = handler.help = ['cnn', 'covidindo', 'covidworld', 'gempa', 'hoax', 'randomcerpen', 'renungan']
-handler.tags = ['edukasi']
+handler.tags = ['internet']
 export default handler

@@ -15,17 +15,17 @@ let handler = async (m, { conn, usedPrefix }) => {
     let caption = `
 ${json.soal}
 
-📮Tipe : ${json.tipe}
-⏳Timeout *${(timeout / 1000).toFixed(2)} detik*
-💬Ketik ${usedPrefix}suska untuk bantuan
-➕Bonus: ${money} Money
-🎟️Limit: ${limit} Limit
+📮 Tipe : ${json.tipe}
+⏳ Timeout *${(timeout / 1000).toFixed(2)} detik*
+💬 Ketik ${usedPrefix}suska untuk bantuan
+➕ Bonus: ${money} Money
+🎟️ Limit: ${limit} Limit
 `.trim()
     conn.susunkata[id] = [
         await conn.reply(m.chat, caption, m),
         json, money,
         setTimeout(() => {
-            if (conn.susunkata[id]) conn.reply(m.chat, `Waktu habis!\n📑Jawabannya adalah *${json.jawaban}*`, conn.susunkata[id][0])
+            if (conn.susunkata[id]) conn.reply(m.chat, `Waktu habis!\n📑 Jawabannya adalah *${json.jawaban}*`, conn.susunkata[id][0])
             delete conn.susunkata[id]
         }, timeout)
     ]

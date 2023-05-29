@@ -14,7 +14,7 @@ let dapet = x.home.on_going
 		rowId: usedPrefix + 'ss ' + v.link
 	}))
 	let button = {
-		buttonText: `☂️ Otaku Search Disini ☂️`,
+		buttonText: `⚜️ Otaku Search Disini ⚜️`,
 		description: `⚡ Silakan pilih Otaku Search di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -31,7 +31,7 @@ let dapet = x.home.complete
 		rowId: usedPrefix + 'ss ' + v.link
 	}))
 	let button = {
-		buttonText: `☂️ Otaku Search Disini ☂️`,
+		buttonText: `⚜️ Otaku Search Disini ⚜️`,
 		description: `⚡ Silakan pilih Otaku Search di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -48,7 +48,7 @@ let dapet = x.animeList
 		rowId: usedPrefix + 'ss ' + v.link
 	}))
 	let button = {
-		buttonText: `☂️ Otaku Search Disini ☂️`,
+		buttonText: `⚜️ Otaku Search Disini ⚜️`,
 		description: `⚡ Silakan pilih Otaku Search di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -65,7 +65,7 @@ let dapet = x.animeList
 		rowId: usedPrefix + 'ss ' + v.link
 	}))
 	let button = {
-		buttonText: `☂️ Otaku Search Disini ☂️`,
+		buttonText: `⚜️ Otaku Search Disini ⚜️`,
 		description: `⚡ Silakan pilih Otaku Search di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -84,7 +84,7 @@ let dapets = Object.values(x.scheduleList.animeList).map(v => ({
 		rowId: usedPrefix + 'ss ' + dapet[0].animeList[0].link
 	}))
 	let button = {
-		buttonText: `☂️ Otaku Search Disini ☂️`,
+		buttonText: `⚜️ Otaku Search Disini ⚜️`,
 		description: `⚡ Silakan pilih Otaku Search di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -101,7 +101,7 @@ let dapet = x.genreList
 		rowId: usedPrefix + 'get ' + v.image_link
 	}))
 	let button = {
-		buttonText: `☂️ Otaku Search Disini ☂️`,
+		buttonText: `⚜️ Otaku Search Disini ⚜️`,
 		description: `⚡ Silakan pilih Otaku Search di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -118,7 +118,7 @@ let dapet = x.search_results.genre_list
 		rowId: usedPrefix + 'get ' + v.image_link
 	}))
 	let button = {
-		buttonText: `☂️ Otaku Search Disini ☂️`,
+		buttonText: `⚜️ Otaku Search Disini ⚜️`,
 		description: `⚡ Silakan pilih Otaku Search di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -150,7 +150,7 @@ let dapet = jsons.result
 		rowId: usedPrefix + 'inspect ' + v.link
 	}))
 	let button = {
-		buttonText: `☂️ Otaku Search Disini ☂️`,
+		buttonText: `⚜️ Otaku Search Disini ⚜️`,
 		description: `⚡ Silakan pilih Otaku Search di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -180,7 +180,7 @@ await conn.sendButton(m.chat, `*Result:*
 *views:* ${x.result.views}
 `, wm, `${x.result.thumb}`, [
                 ['Next', `${usedPrefix}get ${x.result.url}`]
-            ], m, { quoted: fakes })
+            ], m, { quoted: fpay })
 }
 
 if (command == 'ytmp3dl') {
@@ -194,7 +194,7 @@ await conn.sendButton(m.chat, `*Result:*
 *views:* ${x.result.views}
 `, wm, `${x.result.thumb}`, [
                 ['Next', `${usedPrefix}get ${x.result.url}`]
-            ], m, { quoted: fakes })
+            ], m, { quoted: fpay })
 }
 
 if (command == 'playmp4') {
@@ -208,19 +208,7 @@ await conn.sendButton(m.chat, `*Result:*
 *views:* ${x.views}
 `, wm, `${x.thumb}`, [
                 ['Next', `${usedPrefix}get ${x.url}`]
-            ], m, { quoted: fakes })
-}
-
-if (command == 'tiktok3') {
-if (!text) throw `Contoh:\n${usedPrefix + command} https://vt.tiktok.com/ZSeJ7P56G`
-let f = await fetch(`https://betabotz-api.herokuapp.com/api/download/tiktok?url=${text}&apikey=BetaBotz`)
-let x = await f.json()
-await conn.sendButton(m.chat, `*Result:*
-`, wm, `${imgr + command}`, [
-                ['Get Wm', `${usedPrefix}get ${x.result.watermark}`],
-                ['Get NoWm', `${usedPrefix}get ${x.result.nowatermark}`],
-                ['Get Audio', `${usedPrefix}get ${x.result.audio}`]
-            ], m, { quoted: fakes })
+            ], m, { quoted: fpay })
 }
 
 if (command == 'mediafire3') {
@@ -234,7 +222,7 @@ await conn.sendButton(m.chat, `*Result:*
 *Link:* ${x.result.link}
 `, wm, `${imgr + command}`, [
                 ['Get', `${usedPrefix}get ${x.result.link}`]
-            ], m, { quoted: fakes })
+            ], m, { quoted: fpay })
 }
 
 if (command == 'twitterimg') {
@@ -245,7 +233,7 @@ await conn.sendButton(m.chat, `*Result:*
 *Link:* ${x.result}
 `, wm, `${x.result}`, [
                 ['Get', `${usedPrefix}get ${x.result}`]
-            ], m, { quoted: fakes })
+            ], m, { quoted: fpay })
 }
 
 if (command == 'twittervid') {
@@ -256,7 +244,7 @@ await conn.sendButton(m.chat, `*Result:*
 *Link:* ${x.result}
 `, wm, `${imgr + command}`, [
                 ['Get', `${usedPrefix}get ${x.result}`]
-            ], m, { quoted: fakes })
+            ], m, { quoted: fpay })
 }
 
 if (command == 'asupan2') {
@@ -282,7 +270,7 @@ const listMessage = {
   text: `⚡ Silakan pilih tema di tombol di bawah...\n*Ketik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
   footer: global.wm,
   title: `⎔───「 ${command} 」───⎔`,
-  buttonText: `☂️ Tema Disini ☂️`,
+  buttonText: `⚜️ Tema Disini ⚜️`,
   sections
 }
 conn.sendMessage(m.chat, listMessage, m)
@@ -293,63 +281,63 @@ let res = `https://betabotz-api.herokuapp.com/api/asupan/asupan?apikey=BetaBotz`
 await conn.sendButton(m.chat, `*Result:* ${command}
 `, wm, res, [
                 ['Next', `${usedPrefix + command}`]
-            ], m, { quoted: fakes })
+            ], m, { quoted: fpay })
             }
 if (args[0] == 'bocil') {
 let res = `https://betabotz-api.herokuapp.com/api/asupan/bocil?apikey=BetaBotz`
 await conn.sendButton(m.chat, `*Result:* ${command}
 `, wm, res, [
                 ['Next', `${usedPrefix + command}`]
-            ], m, { quoted: fakes })
+            ], m, { quoted: fpay })
             }
 if (args[0] == 'cecan') {
 let res = `https://betabotz-api.herokuapp.com/api/asupan/cecan?apikey=BetaBotz`
 await conn.sendButton(m.chat, `*Result:* ${command}
 `, wm, res, [
                 ['Next', `${usedPrefix + command}`]
-            ], m, { quoted: fakes })
+            ], m, { quoted: fpay })
             }
 if (args[0] == 'euni') {
 let res = `https://betabotz-api.herokuapp.com/api/asupan/euni?apikey=BetaBotz`
 await conn.sendButton(m.chat, `*Result:* ${command}
 `, wm, res, [
                 ['Next', `${usedPrefix + command}`]
-            ], m, { quoted: fakes })
+            ], m, { quoted: fpay })
             }
 if (args[0] == 'gheayubi') {
 let res = `https://betabotz-api.herokuapp.com/api/asupan/gheayubi?apikey=BetaBotz`
 await conn.sendButton(m.chat, `*Result:* ${command}
 `, wm, res, [
                 ['Next', `${usedPrefix + command}`]
-            ], m, { quoted: fakes })
+            ], m, { quoted: fpay })
             }
 if (args[0] == 'hijaber') {
 let res = `https://betabotz-api.herokuapp.com/api/asupan/hijaber?apikey=BetaBotz`
 await conn.sendButton(m.chat, `*Result:* ${command}
 `, wm, res, [
                 ['Next', `${usedPrefix + command}`]
-            ], m, { quoted: fakes })
+            ], m, { quoted: fpay })
             }
 if (args[0] == 'rikagusriani') {
 let res = `https://betabotz-api.herokuapp.com/api/asupan/rikagusriani?apikey=BetaBotz`
 await conn.sendButton(m.chat, `*Result:* ${command}
 `, wm, res, [
                 ['Next', `${usedPrefix + command}`]
-            ], m, { quoted: fakes })
+            ], m, { quoted: fpay })
             }
 if (args[0] == 'santuy') {
 let res = `https://betabotz-api.herokuapp.com/api/asupan/santuy?apikey=BetaBotz`
 await conn.sendButton(m.chat, `*Result:* ${command}
 `, wm, res, [
                 ['Next', `${usedPrefix + command}`]
-            ], m, { quoted: fakes })
+            ], m, { quoted: fpay })
             }
 if (args[0] == 'ukhty') {
 let res = `https://betabotz-api.herokuapp.com/api/asupan/ukhty?apikey=BetaBotz`
 await conn.sendButton(m.chat, `*Result:* ${command}
 `, wm, res, [
                 ['Next', `${usedPrefix + command}`]
-            ], m, { quoted: fakes })
+            ], m, { quoted: fpay })
             }
 }
 
@@ -368,7 +356,6 @@ handler.command = handler.help = [
 'playmp4',
 'stiktele',
 'stikwa',
-'tiktok3',
 'twitterimg',
 'twittervid',
 'ytmp3dl',

@@ -4,7 +4,7 @@ let botol = global.wm
 let str = `
 ✧─────[ *Group Official* ]─────✧
 🍀 Group 1 :
-https://chat.whatsapp.com/HpxyS6b45SoGIKG7LHddiM
+https://chat.whatsapp.com/L5jhSrREsbjCV2es6mSTG6
 ✧──────────···──────────✧
 `.trim()
 conn.sendButton(m.chat, str, `${botol}`, [['⋮☰ MENU','.menu']],m)
@@ -13,4 +13,4 @@ handler.help = ['gcbot']
 handler.tags = ['info']
 handler.command = /^gcbot$/i
 
-export default handler 
+export default handler

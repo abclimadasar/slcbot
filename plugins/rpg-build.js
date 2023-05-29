@@ -27,10 +27,10 @@ const sections = [
 ]
 
 const listMessage = {
-  text: `⚡ Silakan pilih build di bawah...`,
-  footer: global.wm,
-  title: `⎔───「 ${command} 」───⎔`,
-  buttonText: `☂️ Klik Disini ☂️`,
+  text: `Silakan pilih Bangunan yang anda suka...`,
+  footer: global.botdate,
+  title: `❏───「 ${command} 」───❏`,
+  buttonText: `BANGUN RUMAH️`,
   sections
 }
 //
@@ -85,7 +85,7 @@ const listMessage = {
                        break
 
                        default:
-                        return conn.sendMessage(m.chat, listMessage, {quoted: fgif})
+                        return conn.sendMessage(m.chat, listMessage, {quoted: m})
                 }
         }
     } catch (e) {

@@ -4,6 +4,7 @@ const leaderboards = [
   'exp',
   'limit',
   'money',
+  'joinlimit',
   'iron',
   'gold',
   'diamond',

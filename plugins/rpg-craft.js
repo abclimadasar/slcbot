@@ -52,6 +52,12 @@ let lgocraft = `
 │• 6 Diamond
 │• 10k Money
 ╰────┈⭑
+⬡ Join Limit 🎟️
+│• 1 Emerald
+│• 5 Iron
+│• 50k Money
+│• 20 Limit
+╰────┈⭑
 `
 const sections = [
    {
@@ -62,13 +68,14 @@ const sections = [
 	    {title: "FISHINGROD 🎣", rowId: ".craft fishingrod", description: "Crafting A Fishingrod"},
 	    {title: "ARMOR 🥼", rowId: ".craft armor", description: "Crafting A Armor"},
 	    {title: "ATM 💳", rowId: ".craft atm", description: "Crafting A Atm (but that's ilegal)"},
+	    {title: "JOIN LIMIT 🎟️", rowId: ".craft joinlimit", description: "Crafting Card (Join Limit)"},
 	]
     },
 ]
 
 const listMessage = {
-  text: caption,
-  footer: wm,
+  text: bottime,
+  footer: caption,
   title: lgocraft,
   buttonText: " C R A F T ",
   sections
@@ -88,6 +95,17 @@ const listMessage = {
             global.db.data.users[m.sender].pickaxe += 1
             user.pickaxedurability = 40
             m.reply("Sukses membuat 1 pickaxe 🔨")
+            break
+         case 'joinlimit':
+          if (user.joinlimit > 0) return m.reply('Kamu sudah memilik ini')
+            if(user.money < 50000 || user.emerald < 1 || user.iron < 5 || user.limit < 20) return m.reply(`Barang tidak cukup!\nUntuk membuat Kartu Join Limit. Kamu memerlukan : \n50k Uang💰 \n5 iron⛓\n1 Emerald✳️️\n20 Limit 🎫`)
+            global.db.data.users[m.sender].money -= 50000
+            global.db.data.users[m.sender].iron -= 5
+            user.emerald -= 1
+            global.db.data.users[m.sender].limit -= 20
+            global.db.data.users[m.sender].joinlimit += 1
+            user.joinlimitdurability = 100
+            m.reply("Sukses membuat 1 join limit 🎟️")
             break
           case 'sword':
           if (user.sword > 0) return m.reply('Kamu sudah memilik ini')

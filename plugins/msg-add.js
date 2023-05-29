@@ -2,6 +2,7 @@ import { WAProto } from '@adiwajshing/baileys'
 
 let handler = async (m, { conn, command, usedPrefix, text }) => {
     let imgr = flaaa.getRandom()
+    let botol = global.bottime
     let M = WAProto.WebMessageInfo
     let which = command.replace(/add/i, '')
     if (!m.quoted) throw `Balas pesan dengan perintah *${usedPrefix + command}*`
@@ -17,5 +18,7 @@ conn.sendButton(m.chat, `Berhasil menambahkan pesan ${text}\nakses dengan ${used
 handler.help = ['vn', 'msg', 'video', 'audio', 'img', 'stiker', 'gif'].map(v => 'add' + v + ' <teks>')
 handler.tags = ['database']
 handler.command = /^add(vn|msg|video|audio|img|stic?ker|gif)$/
+
+handler.premium = true
 
 export default handler

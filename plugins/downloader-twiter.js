@@ -12,7 +12,7 @@ try {
 	let res = await twitterDl(text)
 	for (let x = 0; x < res.media.length; x++) {
 		let caption = x === 0 ? res.caption.replace(/https:\/\/t.co\/[a-zA-Z0-9]+/gi, '').trim() : ''
-  conn.sendButtonVid(m.chat, res.media[x].url, caption, author, 'To mp3', '.tomp3', fpayment, adReply)
+  conn.sendButtonVid(m.chat, res.media[x].url, caption, author, 'To mp3', '.tomp3', fpay)
 	}
 	} catch {
 	try {
@@ -26,7 +26,7 @@ let dapet = json.result.url
 		rowId: usedPrefix + 'get ' + v.url
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Search Disini ☂️`,
+		buttonText: `⚜️ ${command} Search Disini ⚜️`,
 		description: `⚡ Hai ${name}, Silakan pilih ${command} Search di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}

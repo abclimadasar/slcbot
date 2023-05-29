@@ -121,11 +121,11 @@ global.APIKeys = {
 
 }
 /*Lolhuman*/
-global.lolkey = 'apikeylu'
+global.lolkey = 'SadTeams'
 /*Xteam*/
 global.xteamkey = 'NezukoTachibana281207'
 /*Xcoders*/
-global.xckey = 'apikeylu'
+global.xckey = 'BOhjM2hUVn'
 // FREE APIKEY, WAJIB SUBSCRIBE:V
 // kalau mau ganti apikey mu sendiri terserah
 
@@ -141,11 +141,11 @@ global.titlebot = '𝗬𝗧: Silence Official' //Ganti serah lu
 
 /*⫘⫘⫘⫘ LOGO ⫘⫘⫘⫘⫘*/
 // INI JUGA GANTI SETERAH MU
-global.logo = 'https://ibb.co/17RY7x9'
+global.logo = 'https://ibb.co/17RY7x9'
 global.thumb = 'https://telegra.ph/file/5be97e4b95a677de7b366.jpg' //Thumbnail nya
 global.thumb2 = 'https://telegra.ph/file/312d5d7a5ad4d4f8b5d7a.jpg' //Thumbnail 2
 global.thumbbc = 'https://telegra.ph/file/3377bec81cd8614917d24.jpg' //Image Bcgcb
-global.giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
+global.giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
 global.flaaa = [
 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=water-logo&script=water-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextColor=%23000&shadowGlowColor=%23000&backgroundColor=%23000&text=',
 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=crafts-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&text=',
@@ -446,14 +446,14 @@ global.salah = 'Not Bad!'
 global.dikit = "Dikit Lagi, Semangat!!"
 
 /*⫘⫘⫘⫘ DOCUMENT ⫘⫘⫘⫘⫘*/
-global.dpptx = 'application/vnd.openxmlformats-officedocument.presentationml.presentation' 
-global.ddocx = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' 
-global.dxlsx = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' 
-global.dpdf = 'application/pdf' 
-global.drtf = 'text/rtf' 
-global.djson = 'application/json' 
+global.dpptx = 'application/vnd.openxmlformats-officedocument.presentationml.presentation' 
+global.ddocx = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' 
+global.dxlsx = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' 
+global.dpdf = 'application/pdf' 
+global.drtf = 'text/rtf' 
+global.djson = 'application/json' 
   
-global.thumbdoc = 'https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg'
+global.thumbdoc = 'https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg'
 
 /*⫘⫘⫘⫘ FAKE SIZE ⫘⫘⫘⫘⫘*/
 global.fsizedoc = '99999999999999' // 10TB
@@ -683,7 +683,7 @@ watchFile(file, () => {
   import(`${file}?update=${Date.now()}`)
 })
 
-//------ FUNCTION 
- function pickRandom(list) { 
-   return list[Math.floor(list.length * Math.random())] 
+//------ FUNCTION 
+ function pickRandom(list) { 
+   return list[Math.floor(list.length * Math.random())] 
  }

@@ -48,17 +48,17 @@ const sections = [
 {title: "🥗 Pedagang", rowId: usedPrefix + command + ' pedagang'},
 {title: "🏥 ️Dokter", rowId: usedPrefix + command + ' dokter'},
 {title: "🌾 Petani", rowId: usedPrefix + command + ' petani'},
-{title: "🏯 Montir", rowId: usedPrefix + command + ' montir'},
+{title: "🧰 Montir", rowId: usedPrefix + command + ' montir'},
 {title: "⚒️ Kuli", rowId: usedPrefix + command + ' kuli'}
 	]
     }
 ]
 
 const listMessage = {
-  text: `⚡ Silakan pilih kerjaan di bawah...`,
-  footer: global.wm,
-  title: `⎔───「 ${command} 」───⎔`,
-  buttonText: `☂️ Klik Disini ☂️`,
+  text: `Silahkan pilih pekerjaan yang kamu suka di list berikut...`,
+  footer: global.bottime,
+  title: `     ❏───「 ${command} 」───❏`,
+  buttonText: `PILIH PEKERJAAN️`,
   sections
 }
 //PEMBATAS\\
@@ -111,7 +111,7 @@ global.db.data.users[m.sender].lastkerja = new Date * 1
 	m.reply(`Kamu baru saja selesai ${rumah} 🔨\nDan mendapatkan uang senilai *Rp ${duitk} 💹*`)
 break
 default:
-                        return conn.sendMessage(m.chat, listMessage, {quoted: fgif})
+                        return conn.sendMessage(m.chat, listMessage, {quoted: m})
                 }
                 }
                 

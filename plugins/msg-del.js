@@ -10,4 +10,6 @@ handler.help = ['msg'].map(v => 'del' + v + ' <teks>')
 handler.tags = ['database']
 handler.command = /^(-|del)(all|vn|msg|video|audio|img|stic?ker|gif)$/
 
+handler.owner = true
+
 export default handler

@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 let handler = async(m, { conn, text }) => {
-  if (!text) throw `Masukkan Nama Characternya!\nContoh: #chara Rimuru`
+  if (!text) throw `Masukkan Nama Characternya!\nContoh: .character Rimuru`
   try {
   let res = await fetch(global.API('https://api.jikan.moe', '/v3/search/character', { q: text }))
   if (!res.ok) throw await res.text()

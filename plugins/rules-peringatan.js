@@ -1,19 +1,11 @@
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
-let text = `${htki} RULES ${htka}
+let info = `━━━━━━▢ *RULES* ▢━━━━━━
 
- > *PERINGATAN* :
-┃• Telpon/VC Owner = Blok Otomatis
-`
-const templateButtons = [
-    {index: 1, urlButton: {displayText: 'Youtube', url: 'https://youtube.com/channel/UCACHvReRmw2fxgMutPFCBWg'}},
-]
-let tm = {
-text: text,
-footer: global.wm,
-templateButtons: templateButtons,
-image: {url: fla + 'Donasi'}
-}
-conn.sendMessage(m.chat, tm, m)
+*PERINGATAN* :
+• Telpon/VC Owner = Blok Otomatis
+`.trim()
+
+conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*Banned Peringatan*', 'status@broadcast')
 }
 handler.tags = ['info']
 handler.command = /^banperingatan$/i

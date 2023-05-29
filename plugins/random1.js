@@ -215,7 +215,7 @@ let pii = xx.result
 		rowId: usedPrefix + 'get ' + v.thumb
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Search Disini ☂️`,
+		buttonText: `⚜️ ${command} Search Disini ⚜️`,
 		description: `⚡ Hai ${name}, Silakan pilih ${command} Search di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -245,7 +245,7 @@ if (command == 'beasiswa') {
 		rowId: usedPrefix + 'ss ' + v.link
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Disini ☂️`,
+		buttonText: `⚜️ ${command} Disini ⚜️`,
 		description: `⚡ ${name} Silakan pilih ${command} di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -272,7 +272,7 @@ if (command == 'stimker') {
 		rowId: usedPrefix + 'get ' + lis[v]
 	}))
 	let button = {
-		buttonText: `☂️ Tema Disini ☂️`,
+		buttonText: `⚜️ Tema Disini ⚜️`,
 		description: `⚡ Silakan pilih tema di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -415,7 +415,7 @@ let row = Object.keys(lis).map((v, index) => ({
 		rowId: usedPrefix + 'gettenor ' + text + '|' + lis[v]
 	}))
 	let button = {
-		buttonText: `☂️ Tema Disini ☂️`,
+		buttonText: `⚜️ Tema Disini ⚜️`,
 		description: `⚡ Silakan pilih tema di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}

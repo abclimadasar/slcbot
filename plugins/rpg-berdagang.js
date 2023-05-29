@@ -1,5 +1,6 @@
 const cooldown = 28800000
 let handler = async(m, { conn, text, usedPrefix, command }) => {
+  let imgr = flaaa.getRandom()
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
   let user = global.db.data.users[who]
   let dapat = (Math.floor(Math.random() * 5000))
@@ -16,42 +17,43 @@ let timers = clockString(_ctimer)
   
   let __caption = `${htki} SUKSES ${htka}\nSelamat @${m.sender.split("@")[0]} dan @${who.split("@")[0]} mendapatkan money..\n\nPenghasilan dagang @${m.sender.split("@")[0]} didapatkan +10000\n${user.money += 10000} Money @${m.sender.split("@")[0]}\n\nPenghasilan dagang @${who.split("@")[0]} didapatkan +10000\n${user.money += 10000} Money @${who.split("@")[0]}`
   
-  conn.sendButton(m.chat, caption, clockString(60000), null, [
-      ['Invetory', `${usedPrefix}inv`], ['Profile', `${usedPrefix}profile`]
+  conn.sendButton(m.chat, clockString(60000), caption, `${imgr + 'Selesai Berdagang'}`, [
+      ['INVENTORY', `${usedPrefix}inv`], ['KERJA', `${usedPrefix}kerja`]
     ], m, { mentions: conn.parseMention(caption) })
     
 					setTimeout(() => {
-			conn.sendButton(m.chat, __caption, `SUKSES`, null, [
-      ['Invetory', `${usedPrefix}inv`], ['Profile', `${usedPrefix}profile`]
+			conn.sendButton(m.chat, `SUKSES`, __caption, `${imgr + 'Sukses'}`, [
+      ['INVENTORY', `${usedPrefix}inv`], ['KERJA', `${usedPrefix}kerja`]
     ], m, { mentions: conn.parseMention(__caption) })
 		}, 10800000)
 
 		setTimeout(() => {
-			conn.sendButton(m.chat, _caption, clockString(10800000), null, [
-      ['Invetory', `${usedPrefix}inv`], ['Profile', `${usedPrefix}profile`]
+			conn.sendButton(m.chat, clockString(10800000), _caption, `${imgr + 'Berdagang'}`, [
+      ['INVENTORY', `${usedPrefix}inv`], ['KERJA', `${usedPrefix}kerja`]
     ], m, { mentions: conn.parseMention(_caption) })
 		}, 7200000)
 
 		setTimeout(() => {
-			conn.sendButton(m.chat, _caption, clockString(7200000), null, [
+			conn.sendButton(m.chat, clockString(7200000), _caption, `${imgr + 'Berdagang'}`, [
       ['Invetory', `${usedPrefix}inv`], ['Profile', `${usedPrefix}profile`]
     ], m, { mentions: conn.parseMention(_caption) })
 		}, 3600000)
 
 		setTimeout(() => {
-			conn.sendButton(m.chat, _caption, clockString(3600000), null, [
+			conn.sendButton(m.chat, clockString(3600000), _caption, `${imgr + 'Berdagang'}`, [
       ['Invetory', `${usedPrefix}inv`], ['Profile', `${usedPrefix}profile`]
     ], m, { mentions: conn.parseMention(_caption) })
 		}, 60000)
 					user.lastdagang = new Date * 1
-} else conn.sendButton(m.chat, `Anda Sudah Berdagang tunggu\n${timers} lagi..`, botdate, null, [
-      ['Invetory', `${usedPrefix}inv`], ['Profile', `${usedPrefix}profile`]
+} else conn.sendButton(m.chat, bottime, `Anda Sudah Berdagang tunggu\n${timers} lagi..`, `${imgr + 'Cooldown'}`, [
+      ['INVENTORY', `${usedPrefix}inv`], ['BANK', `${usedPrefix}bank`]
     ], m)
 }
 handler.help = ['berdagang'].map(v => v + ' @[tag]')
 handler.tags = ['rpg']
 handler.command = /^(berdagang|dagang)$/i
-handler.limit = true
+handler.limit = false
+handler.premium = true
 handler.cooldown = cooldown
 export default handler 
 

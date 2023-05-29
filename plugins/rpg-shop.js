@@ -6,6 +6,9 @@ const items = {
         potion: {
             money: 1250
         },
+        joinlimit: {
+            money: 500000
+        },
         aqua: {
            money: 500
         },

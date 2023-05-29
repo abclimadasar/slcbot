@@ -1,4 +1,5 @@
 let handler = async (m, { conn }) => {
+    let imgr = flaaa.getRandom()
     let __timers = (new Date - global.db.data.users[m.sender].lastngojek)
     let _timers = (300000 - __timers)
     let order = global.db.data.users[m.sender].ojekk
@@ -84,7 +85,7 @@ setTimeout(() => {
                      m.reply('🔍Mencari Target pembunuhan.....')
                      }, 0) 
   user.lastngojek = new Date * 1
-    } else conn.sendButton(m.chat, `Sepertinya Anda Sudah Kecapekan Silahkan Istirahat Dulu sekitar\n🕔 *${timers}*`, wm, 'inventory', '.inv', m )
+    } else conn.sendButton(m.chat, bottime, `Sepertinya Anda Sudah Kecapekan Silahkan Istirahat Dulu sekitar\n🕔 *${timers}*`, `${imgr + 'Cooldown'}`, [['inventory', '.inv']], m )
 }
 handler.help = ['bunuh']
 handler.tags = ['rpg']

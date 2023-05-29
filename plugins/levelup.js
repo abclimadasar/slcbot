@@ -5,13 +5,16 @@ let handler = async (m, { conn }) => {
     let user = global.db.data.users[m.sender]
     if (!canLevelUp(user.level, user.exp, global.multiplier)) {
         let { min, xp, max } = xpRange(user.level, global.multiplier)
+        let imgr = flaaa.getRandom()
+        let imgr = flaaa.getRandom()
+        const vv = await conn.profilePictureUrl(m.sender, 'image').catch(() => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
         let level = `
 ➟ Level ${user.level} 📊
 
 ➟ POINT : *${user.exp - min} / ${xp}*
 Anda membutuhkan *${max - user.exp}* Lagi ❗
 `.trim()
-conn.sendButton(m.chat, hiasan, level, Levelup, [['️INVENTORY', '.inv'],['PUSH EXP', '.listexp']],m)
+conn.sendButton(m.chat, hiasan, level, `${imgr + 'Levelup'}`, [['️INVENTORY', '.inv'],['PUSH EXP', '.listexp']],m)
     }
     let before = user.level * 1
     while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
@@ -28,9 +31,9 @@ conn.sendButton(m.chat, hiasan, level, Levelup, [['️INVENTORY', '.inv'],['PUSH
 
         try {
             const src = await levelup(teks, user.level)
-            conn.sendButton(m.chat, hiasan, str, thumbLevelup, [['️INVENTORY', '.inv'],['MENU', '.menu'],['REFERAL', '.ref']],m)
+            conn.sendButton(m.chat, hiasan, str, `${imgr + 'Levelup'}`, [['️INVENTORY', '.inv'],['MENU', '.menu'],['REFERAL', '.ref']],m)
         } catch (e) {
-            conn.sendButton(m.chat, hiasan, str, thumbLevelup, [['️INVENTORY', '.inv'],['MENU', '.menu'],['REFERAL', '.ref']],m)
+            conn.sendButton(m.chat, hiasan, str, `${imgr + 'Levelup'}`, [['️INVENTORY', '.inv'],['MENU', '.menu'],['REFERAL', '.ref']],m)
         }
     }
 }

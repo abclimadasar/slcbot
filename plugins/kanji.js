@@ -52,7 +52,7 @@ let pesan = `*Result :*`
 		rowId: usedPrefix + 'tts ' + v.variants[i].written
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Search Disini ☂️`,
+		buttonText: `⚜️ ${command} Search Disini ⚜️`,
 		description: `⚡ Hai ${name}, Silakan pilih ${command} Search di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}

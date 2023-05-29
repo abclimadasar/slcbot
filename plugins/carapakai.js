@@ -38,7 +38,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
  │   *_Jangan judi, Karena gk bakal_* 
  │   *_balik modal.BENERAN GK BOHONG_* 
  │   
- │*© Silence BOT 2020-2021* 
+ │*© SILENCE BOT 2020-2021* 
  ╰─「 *Tutorial Main SILENCE BOT* 」 
  `.trim(), m) 
  } 

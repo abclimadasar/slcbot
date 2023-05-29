@@ -101,6 +101,7 @@ function reward(user = {}) {
             kyubi: [0, 1, 0, 0, 0],
             lion: [0, 1, 0, 0, 0],
             pet: [0, 1, 0, 0, 0],
+            joinlimit: [0, 0, 1, 0, 0,],
             phonix: [0, 1, 0, 0, 0],
             rhinoceros: [0, 1, 0, 0, 0],
             robo: [0, 1, 0, 0, 0],

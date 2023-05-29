@@ -4,7 +4,7 @@ let info = `
 
 conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*✧───────···────────✧*\n*Hallo Juga Kak Shinn Kangen Nih* \n *Gimana Kabar Nya? >~<*', 'status@broadcast')
 }
-handler.customPrefix = /^(Hallo Kanna|Hallo kanna|hi kanna|Hi Kanna)$/i
+handler.customPrefix = /^(Hallo kanna|Hallo fangz|hi fangz|Hi kanna)$/i
 handler.command = new RegExp
 
 handler.owner = false

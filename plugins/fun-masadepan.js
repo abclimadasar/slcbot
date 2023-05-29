@@ -14,12 +14,13 @@ ${pickRandom(global.masadepan)}
             caption: wm,
             footer: anu,
             templateButtons: [
-                {
+/*                {
                     urlButton: {
                         displayText: 'Support Me',
                         url: swb
                     }
                 },
+*/
                 {
                     quickReplyButton: {
                         displayText: 'Aminn',

@@ -1,9 +1,13 @@
 /**
+ * Jangan Di Hapus!!
+ * 
+ * Buatan @FokusDotId (Fokus ID)
+ * Github: https://github.com/fokusdotid
  * 
  * Ingin bikin fitur tapi tidak bisa coding?
  * hubungi: https://wa.me/6288215689772
  * 
- */
+ 
 
 
 import fs from 'fs';
@@ -89,7 +93,7 @@ export async function all(m) {
 		}
 	};
 	
-	/* Duplicate of config.js
+	 Duplicate of config.js
 	global.fpayment = {
 		key: {
 			remoteJid: '0@s.whatsapp.net',
@@ -116,7 +120,7 @@ export async function all(m) {
 			}
 		}
 	};
-	*/
+	
 	
 	global.ftroli = {
 		key: {
@@ -359,8 +363,11 @@ function ucapan() {
 
 
 
-/**
+
  * Jangan Di Hapus!!
+ * 
+ * Buatan @FokusDotId (Fokus ID)
+ * Github: https://github.com/fokusdotid
  * 
  * Ingin bikin fitur tapi tidak bisa coding?
  * hubungi: https://wa.me/6288215689772

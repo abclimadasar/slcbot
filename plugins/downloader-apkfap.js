@@ -48,7 +48,7 @@ let dapet = xx.result
 		rowId: usedPrefix + 'ss ' + v.apps_linkdl
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Search Disini ☂️`,
+		buttonText: `⚜️ ${command} Search Disini ⚜️`,
 		description: `⚡ Silakan pilih ${command} Search di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -65,7 +65,7 @@ let dapet = xx.result
 		rowId: usedPrefix + 'ss ' + v.apps_linkdl
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Search Disini ☂️`,
+		buttonText: `⚜️ ${command} Search Disini ⚜️`,
 		description: `⚡ Silakan pilih ${command} Search di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -82,7 +82,7 @@ let dapet = xx.result
 		rowId: usedPrefix + 'ss ' + v.apps_linkdl
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Search Disini ☂️`,
+		buttonText: `⚜️ ${command} Search Disini ⚜️`,
 		description: `⚡ Silakan pilih ${command} Search di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -99,7 +99,7 @@ let dapet = xx.result
 		rowId: usedPrefix + 'ss ' + v.apps_linkdl
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Search Disini ☂️`,
+		buttonText: `⚜️ ${command} Search Disini ⚜️`,
 		description: `⚡ Silakan pilih ${command} Search di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -116,7 +116,7 @@ let dapet = xx.result
 		rowId: usedPrefix + 'ss ' + v.apps_linkdl
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Search Disini ☂️`,
+		buttonText: `⚜️ ${command} Search Disini ⚜️`,
 		description: `⚡ Silakan pilih ${command} Search di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -133,7 +133,7 @@ let dapet = xx.result
 		rowId: usedPrefix + 'ss ' + v.apps_linkdl
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Search Disini ☂️`,
+		buttonText: `⚜️ ${command} Search Disini ⚜️`,
 		description: `⚡ Silakan pilih ${command} Search di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -150,7 +150,7 @@ let dapet = xx.result
 		rowId: usedPrefix + 'ss ' + v.apps_linkdl
 	}))
 	let button = {
-		buttonText: `☂️ ${command} Search Disini ☂️`,
+		buttonText: `⚜️ ${command} Search Disini ⚜️`,
 		description: `⚡ Silakan pilih ${command} Search di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}

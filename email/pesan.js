@@ -1,11 +1,11 @@
 // virtex lu
 const gmail1 = `
-Hay Fitur eror yang anda gunakan sudah di Fix oleh moderator Fangz BOT
+Hay Fitur eror yang anda gunakan sudah di Fix oleh moderator Silence BOT
 Jika ada fitur eror lainya ketik .report ya
 Agar kami tangani secepatnya 
 
 Thank you for using our Bot ☺️
-
+`
 const gmail = pickRandom([gmail1])
 
 export default virtex;

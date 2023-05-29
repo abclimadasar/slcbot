@@ -1,5 +1,11 @@
 import { join } from 'path'
 import { xpRange } from '../lib/levelling.js'
+import fetch from 'node-fetch'
+import uploadFile from '../lib/uploadFile.js'
+import uploadImage from '../lib/uploadImage.js'
+import moment from 'moment-timezone'
+import { sticker } from '../lib/sticker.js'
+import fs from "fs"
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 
@@ -30,14 +36,31 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
      }
      let math = max - xp
 let caption = `*YOUR PROFILE*
-*🏷️ Nama:* *(${name})* ${registered ? '(' + name + ') ' : ''} ( @${who.split("@")[0]} )
+*🏷️ Nama:* ${registered ? '(' + name + ') ' : ''} 
+*🪀 Tag:* @${who.split("@")[0]}
 *❤️ Pasangan:*  ${pasangan ? `@${pasangan.split("@")[0]}` : `Tidak Punya`}
 *💲 Money:* *RP* ${money}
 *🏆 Level* ${level}
 *🎋 Role:* ${role}
-*🧬 XP:* TOTAL ${exp} (${exp - min} / ${xp}) [${math <= 0 ? `Siap untuk *${usedPrefix}levelup*` : `${math} XP lagi untuk levelup`}]
-*📨 Terdaftar:* ${registered ? 'Ya (' + new Date(regTime).toLocaleString() + ')' : 'Tidak'} ${lastclaim > 0 ? '\n*⏱️Terakhir Klaim:* ' + new Date(lastclaim).toLocaleString() : ''}\n\n Ketik ${usedPrefix}inv untuk melihat Inventory RPG`
-await conn.sendButton(m.chat, caption, wm, pp, [['Menu', `${usedPrefix}menu`],['Owner', `${usedPrefix}owner`]], m, { mentions: conn.parseMention(caption) })
+*🧬 XP:* TOTAL ${exp}
+*📨 Terdaftar:* ${registered ? '✅ (' + new Date(regTime).toLocaleString() + ')' : '❌'} ${lastclaim > 0 ? '\n*⏱️Terakhir Klaim:* ' + new Date(lastclaim).toLocaleString() : ''}\n\n Ketik ${usedPrefix}inv untuk melihat Inventory RPG`
+await conn.sendButton(m.chat, bottime, caption, pp, [
+                ['LEVELUP', `${usedPrefix}levelup`],
+                ['CLAIM', `${usedPrefix}claim`]
+            ], m, {
+            fileLength: fsizedoc,
+            seconds: fsizedoc,
+            contextInfo: {
+          externalAdReply :{
+    mediaUrl: sig,
+    mediaType: 2,
+    description: wm, 
+    title: bottime,
+    body: botdate,
+    thumbnail: await(await fetch(thumb)).buffer(),
+    sourceUrl: sgc
+     }}
+  })
 }
 
 handler.help = ['profile'].map(v => v + ' <url>')
@@ -46,3 +69,13 @@ handler.tags = ['rpg']
 handler.command = /^(pro(fil)?(file)?)$/i
 
 export default handler
+
+const fetchJson = (url, options) => new Promise(async (resolve, reject) => {
+fetch(url, options)
+.then(response => response.json())
+.then(json => {
+resolve(json)
+})
+.catch((err) => {
+reject(err)
+})})

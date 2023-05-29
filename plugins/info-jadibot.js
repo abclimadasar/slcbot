@@ -15,9 +15,9 @@ let anu = `Hallo mypren 👋
 ⬡ *PERMANEN:* 50.000
 ┗━━━━━━━━━━━━━━━━━━ꕥ
 ┏━━━〔 ıll *PAYMENT* llı 〕━━ꕥ
-⬡ *DANA:* ${dana}
-⬡ *GOPAY:* ${gopay}
-⬡ *OVO:* ${pulsa}
+⬡ *DANA:* ${pdana}
+⬡ *THREE3:* ${ppulsa}
+⬡ *QRIS:* ${psaweria}
 ┗━━━━━━━━━━━━━━━━━━ꕥ
 ┏━━〔 ıll *RULES* llı 〕━ꕥ
 ⬡ [❗] *Dana yang sudah masuk tidak bisa di kembalikan*
@@ -28,7 +28,7 @@ Jika anda berminat hubungi nomor di bawah!!
 Terimakasih yang sudah mendonasikan untuk bot
 
 Contact person jasa run:
-wa.me/${numberowner} (Owner)
+wa.me/${nomorown} (Owner)
 
 *Subscribe Youtube Owner*`
   conn.sendButton(m.chat, anu, syt, flaaa.getRandom() + teks, [['Donasi', '.donasi'], ['SewaBot', '.sewabot']], m)

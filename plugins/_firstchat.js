@@ -1,32 +1,13 @@
-import moment from 'moment-timezone';
 
-export async function before(m) {
-    if (m.chat.endsWith('broadcast') || m.fromMe || m.isGroup) return
-
-    let user = global.db.data.users[m.sender]
-    let txt = `👋Hai, ${ucapan()}
-
-${user.banned ? '📮Maaf, kamu dibanned & Tidak bisa menggunakan bot ini lagi' : `💬 Terima kasih sudah menggunakan ${this.user.name} bantu?`}`.trim()
-
-    if (new Date() - user.pc < 21600000) return // waktu ori 21600000 (6 jam)
-    await this.sendButton(m.chat, txt, user.banned ? wm : '📮Note: Jangan spal bot nya\nAtau kamu di banned', [user.banned ? 'OKE 🙂' : '🌸 MENU' user.banned ? 'Ok' : '.menu'], m)
+export async function all(m) {
+if (m.chat.endsWith('broadcast') || m.fromMe || m.isGroup || db.data.settings[this.user.jid].group) return
+   let user = global.db.data.users[m.sender]
+    const cooldown = 86400000
+    if (new Date - user.pc < cooldown) return // setiap 24 jam sekali
+    let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+    let name = await conn.getName(who)
+    let pp = await conn.profilePictureUrl(who).catch(_ => './src/avatar_contact.png')
+    let caption = `👋 Hai @${who.split("@")[0]}, ${user.banned ? 'kamu dibanned' : `Ada yang bisa *${this.user.name}* bantu?\n\nhttps://chat.whatsapp.com/I2OK9w2mkIpKngLpFs0i93\n\n*Ketik .menu Untuk melihat list menu Silence BOT!*`}`.trim()
+    this.sendButton(m.chat, hiasan, caption, pp, [[user.banned ? 'OWNER' : 'CARI TEMAN', user.banned ? '/owner' : '/start']], m, { mentions: this.parseMention(caption) })
     user.pc = new Date * 1
 }
-
-
-function ucapan() {
-    const time = moment.tz('Asia/Jakarta').format('HH')
-    let res = "Selamat dinihari 🌆"
-    if (time >= 4) {
-        res = "Selamat pagi 🌄"
-    }
-    if (time > 10) {
-        res = "Selamat siang ☀️"
-    }
-    if (time >= 15) {
-        res = "Selamat sore 🌇"
-    }
-    if (time >= 18) {
-        res = "Selamat malam 🌙"
-    }
-    return res

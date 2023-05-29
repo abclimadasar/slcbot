@@ -7,7 +7,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 	if (/image/g.test(mime)) {
 		let img = await webp2png(await q.download()),
 			url = API('violetics', '/api/media/removebg', { img }, 'apikey')
-		conn.sendMessage(m.chat, { image: { url }}, { quoted: m })
+		conn.sendMessage(m.chat, { image: { url }}, { quoted: fpay })
 	} else throw `Send/reply an image with command ${usedPrefix + command}`
 }
 handler.help = ['removebg']

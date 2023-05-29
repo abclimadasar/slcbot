@@ -179,7 +179,7 @@ const listMessage = {
   text: `⚡ Silakan pilih tema di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
   footer: global.wm,
   title: `⎔───「 ${command} 」───⎔`,
-  buttonText: `☂️ Tema Disini ☂️`,
+  buttonText: `⚜️ Tema Disini ⚜️`,
   sections
 }
 conn.sendMessage(m.chat, listMessage, fdoc)

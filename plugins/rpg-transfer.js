@@ -28,7 +28,7 @@ Are you sure you want to transfer\n\n🧾Jumlah: *${count}*\n🎁Tipe: ${rpg.emo
 Timeout *60* detik
 `.trim()
     let c = global.bottime
-    conn.sendButton(m.chat, c, confirm, `${imgr + 'Transfer'}`, [['LANJUT'], ['BATAL']], m, { mentions: [who] })
+    conn.sendButton(m.chat, c, confirm, `${imgr + 'Transfer'}`, [['LANJUT', '✅'], ['BATAL', '❎']], m, { mentions: [who] })
     confirmation[m.sender] = {
         sender: m.sender,
         to: who,
@@ -47,12 +47,12 @@ handler.before = async m => {
     if (m.id === message.id) return
     let user = global.db.data.users[sender]
     let _user = global.db.data.users[to]
-    if (/no?/g.test(m.text.toLowerCase())) {
+    if (/(❎|n(o)?)/g.test(m.text.toLowerCase())) {
         clearTimeout(timeout)
         delete confirmation[sender]
         return m.reply('Coba Lagi')
     }
-    if (/y(es)?/g.test(m.text.toLowerCase())) {
+    if (/(✅|y(es)?)/g.test(m.text.toLowerCase())) {
         let previous = user[type] * 1
         let _previous = _user[type] * 1
         user[type] -= count * 1

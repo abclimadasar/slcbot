@@ -22,7 +22,7 @@ try {
 		rowId: usedPrefix + 'get ' + v.sound
 	}))
 	let button = {
-		buttonText: `☂️ SFX Disini ☂️`,
+		buttonText: `⚜️ SFX Disini ⚜️`,
 		description: `⚡ Silakan pilih SFX di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -47,7 +47,7 @@ drum : nama sound
 		rowId: usedPrefix + 'sfx3 ' + v.id
 	}))
 	let button = {
-		buttonText: `☂️ SFX Disini ☂️`,
+		buttonText: `⚜️ SFX Disini ⚜️`,
 		description: `⚡ Silakan pilih SFX di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -173,7 +173,7 @@ try {
 		rowId: usedPrefix + 'get https://raw.githubusercontent.com/AyGemuy/HAORI-API/main/audio/' + hasil[v] + '.mp3'
 	}))
 	let button = {
-		buttonText: `☂️ SFX Disini ☂️`,
+		buttonText: `⚜️ SFX Disini ⚜️`,
 		description: `⚡ Silakan pilih SFX di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}
@@ -192,7 +192,7 @@ try {
 		rowId: usedPrefix + 'get https://raw.githubusercontent.com/AyGemuy/HAORI-API/main/sound/sound' + hasil[v] + '.mp3'
 	}))
 	let button = {
-		buttonText: `☂️ SFX Disini ☂️`,
+		buttonText: `⚜️ SFX Disini ⚜️`,
 		description: `⚡ Silakan pilih SFX di tombol di bawah...\n*Teks yang anda kirim:* ${text}\n\nKetik ulang *${usedPrefix + command}* teks anda untuk mengubah teks lagi`,
 		footerText: wm
 	}

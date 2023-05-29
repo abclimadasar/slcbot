@@ -6,19 +6,19 @@ let handler = async (m, { conn, args, usedPrefix, command, isPrems, isOwner }) =
 	title: "🎙️ Audio",
 	rows: [
 	    {title: "Get Audio", rowId: `${usedPrefix}getaud ${args[0]} audio`},
-	    {title: "Yt Audio", rowId: `${usedPrefix}yta ${args[0]}`},
-	    {title: "Yt Audio Yes", rowId: `${usedPrefix}yta ${args[0]} yes`}
+	    {title: "YT Audio", rowId: `${usedPrefix}yta ${args[0]}`},
+	    {title: "Ytmp3Juice", rowId: `${usedPrefix}yta ${args[0]} yes`}
 	]
     },
     {
 	title: "🎥 Video",
 	rows: [
-	    {title: "Get Video 1080p", rowId: `${usedPrefix}getvid ${args[0]} 1080`},
-{title: "Get Video 720p", rowId: `${usedPrefix}getvid ${args[0]} 720`},
-{title: "Get Video 480p", rowId: `${usedPrefix}getvid ${args[0]} 480`},
-{title: "Get Video 360p", rowId: `${usedPrefix}getvid ${args[0]} 360`},
-{title: "Yt Mp4", rowId: `${usedPrefix}ytmp4 ${args[0]}`},
-{title: "Yt Mp4 Yes", rowId: `${usedPrefix}ytmp4 ${args[0]} yes`}
+	    {title: "Quality 1080p", rowId: `${usedPrefix}getvid ${args[0]} 1080`},
+{title: "Quality 720p", rowId: `${usedPrefix}getvid ${args[0]} 720`},
+{title: "Quality 480p", rowId: `${usedPrefix}getvid ${args[0]} 480`},
+{title: "Quality 360p", rowId: `${usedPrefix}getvid ${args[0]} 360`},
+{title: "YT Mp4", rowId: `${usedPrefix}ytmp4 ${args[0]}`},
+{title: "Ytmp4Juice", rowId: `${usedPrefix}ytmp4 ${args[0]} yes`}
 	]
     },
    
@@ -26,13 +26,13 @@ let handler = async (m, { conn, args, usedPrefix, command, isPrems, isOwner }) =
 
 const listMessage = {
   text: `${htjava}  ᴩʟᴇᴀꜱᴇ ꜱᴇʟᴇᴄᴛ yᴏᴜʀ ᴍᴇᴅɪᴀ ᴛyᴩᴇ...`,
-  footer: wm,
+  footer: botdate,
   title: " 📥 𝗬𝗧 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥",
-  buttonText: "Click Here !",
+  buttonText: "List Download",
   sections
 }
 
-return conn.sendMessage(m.chat, listMessage, { quoted: m})
+return conn.sendMessage(m.chat, listMessage, { quoted: fpay})
 }
 
 handler.help = ['ytd']

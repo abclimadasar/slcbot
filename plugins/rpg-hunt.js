@@ -52,8 +52,8 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
   let monsterName = monster.toUpperCase()
 
   if (new Date - global.db.data.users[m.sender].lasthunt > 1200000) {
-    let coins = parseInt(Math.floor(Math.random() * 100000))
-    let exp = parseInt(Math.floor(Math.random() * 10000))
+    let coins = parseInt(Math.floor(Math.random() * 10000))
+    let exp = parseInt(Math.floor(Math.random() * 1000))
     let _healing = `${Math.floor(Math.random() * 100)}`.trim()
     let healing = (_healing * 1)
     player.health -= healing

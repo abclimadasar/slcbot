@@ -1,4 +1,4 @@
-let badwordRegex = /anj(k|g)|ajn?(g|k)|a?njin(g|k)|bajingan|b(a?n)?gsa?t|ko?nto?l|me?me?(k|q)|pe?pe?(k|q)|meki|titi(t|d)|pe?ler|tetek|toket|ngewe|go?blo?k|to?lo?l|idiot|(k|ng)e?nto?(t|d)|jembut|bego|dajj?al|janc(u|o)k|pantek|puki ?(mak)?|kimak|kampang|lonte|col(i|mek?)|pelacur|henceu?t|nigga|fuck|dick|bitch|tits|bastard|asshole/i // tambahin sendiri
+let badwordRegex = /ajg(n|j)(k|g)|ajn?(g|k)|a?njin(g|k)|bajingan|b(a?n)?gsa?t|ko?nto?l|me?me?(k|q)|pe?pe?(k|q)|meki|titi(t|d)|pe?ler|tetek|toket|ngewe|go?blo?k|to?lo?l|idiot|(k|ng)e?nto?(t|d)|jembut|bego|dajj?al|janc(u|o)k|pantek|puki ?(mak)?|kimak|kampang|lonte|col(i|mek?)|pelacur|henceu?t|nigga|fuck|dick|bitch|tits|bastard|asshole/i // tambahin sendiri
 
 export function before(m, { isBotAdmin }) {
     if (m.isBaileys && m.fromMe) return !0
@@ -9,14 +9,10 @@ export function before(m, { isBotAdmin }) {
 
     if (chat.antiBadword && isBadword) {
         user.warning += 1
-        this.sendButton(m.chat, `*📮ᴛᴏxɪᴄ ᴛᴇʀᴅᴇᴛᴇᴋꜱɪ !\nhttp://bīt.ly/ᯤ*
+        this.sendButton(m.chat, `*Toxic Terdeteksi !*\n*http://bīt.ly/ᯤ*
 あ Warning: ${user.warning} / 5 ┊
-
-[❗] Jika warning mencapai 5 kamu akan *dibanned+kick*
-
-Anda hanya bisa meminta Owner untuk membuka banned-nya !\n\n🌸 Bot By AngelDark
-
-“Barang siapa yang beriman kepada Allah dan Hari Akhir maka hendaklah dia berkata baik atau diam” (HR. al-Bukhari dan Muslim).`, wm, [['🎀CEK WARN', '.cekdosa'], ['🎐AUTHOR BOT', '.owner']], m)
+[❗] Jika warning mencapai 5 kamu akan *dibanned + kick*
+Anda hanya bisa meminta Owner untuk membuka banned-nya !\n\n© AngelDark~`, wm, [['Cek Warning', '.cekdosa'], ['Owner', '.owner']], m)
         if (user.warning >= 5) {
             user.banned = true
             if (m.isGroup) {
@@ -29,7 +25,3 @@ Anda hanya bisa meminta Owner untuk membuka banned-nya !\n\n🌸 Bot By AngelDar
     }
     return !0
 }
-
-
-
-// jasa buat by Fokusdotid (Fokus ID)

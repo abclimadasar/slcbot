@@ -21,7 +21,7 @@ say('SILENCE\nMD', {
   align: 'center',
   colors: ['blue']
 })
-say(`SILENCE-MD, Bot By Abdul Mufid`, {
+say(`⚜️ SILENCE-MD, Bot By @${global.nameown}`, {
   font: 'console',
   align: 'center',
   colors: ['green']
@@ -62,7 +62,7 @@ function start(file) {
   })
   let p = fork()
   p.on('message', data => {
-    console.log('[⚠️] JARINGAN BURUK', data)
+    console.log('[⚠️] RECEIVED', data)
     switch (data) {
       case 'reset':
         p.process.kill()

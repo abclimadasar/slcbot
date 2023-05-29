@@ -2,7 +2,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 let text = `${htki} *TUTORIAL* ${htka}
 
 *📮 Command Termux:*
-Command termux Fangz Bot
+Command termux Silence Bot
 ⏬⏬⏬⏬⏬⏬⏬⏬⏬⏬⏬
 
 
@@ -56,7 +56,7 @@ const templateButtons = [
 let tm = {
 text: text,
 footer: global.wm,
-templateButtons: templateButtons,
+// templateButtons: templateButtons,
 image: {url: fla + 'Donasi'}
 }
 conn.sendMessage(m.chat, tm, m)
