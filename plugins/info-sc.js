@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn }) => {
   let caption = `
 *「 SCRIPT BOT 」*
-*MAU BUY SCRIPT BOT INI?*\n*_Chat Wa_*\nwa.me/79814212373\n*Harga Rp100.000* (NEGO)
+*MAU BUY SCRIPT BOT INI?*\n*_Chat Wa_*\nwa.me/6287782830020\n*Harga Rp100.000* (NEGO)
 `.trim()
   m.reply(caption)
 }

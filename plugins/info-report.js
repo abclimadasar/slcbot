@@ -1,5 +1,5 @@
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-    if (!text) throw `📮 Kalo kamu ada keluhan tentang bug/eror ketik .report <keluhan> atau lainya klik\n\nCustomer Service\n📣Klik link berikut: wa.me/19047502362`
+    if (!text) throw `📮 Kalo kamu ada keluhan tentang bug/eror ketik .report <keluhan> atau lainya klik\n\nCustomer Service\n📣Klik link berikut: wa.me/6287782830020`
     if (text.length > 1000) throw `Laporan terlalu panjang, maksimal 1000 karakter!`
     let teks = `*${command.toUpperCase()}!*\n\nDari : *@${m.sender.split`@`[0]}*\n\nPesan : ${text}\n`
     conn.reply(global.nomorown + '@s.whatsapp.net', m.quoted ? teks + m.quoted.text : teks, null, {
