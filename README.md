@@ -25,22 +25,22 @@
 > **Note**: 
 > Bagi Yang Udah Forks Aja
 
-## ```Connect With Me 📞``` <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="32px">
+## ```Connect With Me 📞``` <img src="https://github.com/itsmeyudd/siegrin/blob/main/Assets/Handshake.gif" height="32px">
   <a href="https://wa.me/6287782830020">
-    <img align="left" alt="SIEGRIN | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />
+    <img align="left" alt="SIEGRIN | Whastapp" width="26px" src="https://github.com/itsmeyudd/siegrin/blob/main/Assets/Whatsapp.svg" />
   </a> &nbsp;&nbsp;
   <a href="https://instagram.com/eabdalmufid_">
-    <img align="left" alt="SIEGRIN | Titkok" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Tiktok.svg" />
+    <img align="left" alt="SIEGRIN | Titkok" width="26px" src="https://github.com/itsmeyudd/siegrin/blob/main/Assets/Tiktok.svg" />
   </a> &nbsp;&nbsp;
   <a href="https://instagram.com/eabdalmufid_">
-    <img align="left" alt="SIEGRIN | Instagram" width="24px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Instagram.svg" />
+    <img align="left" alt="SIEGRIN | Instagram" width="24px" src="https://github.com/itsmeyudd/siegrin/blob/main/Assets/Instagram.svg" />
   </a> &nbsp;&nbsp;
   <a href="https://instagram.com/eabdalmufid_">
-    <img align="left" alt="SIEGRIN | Gmail" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Gmail.svg" />
+    <img align="left" alt="SIEGRIN | Gmail" width="26px" src="https://github.com/itsmeyudd/siegrin/blob/main/Assets/Gmail.svg" />
   </a> &nbsp;&nbsp;
 
 
-## ```Whatsapp``` <a href="https://wa.me/6287782830020"> <img align="left" alt="SIEGRIN | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />
+## ```Whatsapp``` <a href="https://wa.me/6287782830020"> <img align="left" alt="SIEGRIN | Whastapp" width="26px" src="https://github.com/itsmeyudd/siegrin/blob/main/Assets/Whatsapp.svg" />
 [![BOT WHATSAPP](https://img.shields.io/badge/WhatsApp%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6287782830002) 
 [![ONWER](https://img.shields.io/badge/Owner%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6287782830020) 
 [![GROUP OFFICIAL](https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/I23IUWLdmgfIIBWfEKNPEP) 
