@@ -21,7 +21,7 @@ say("SILENCE\nMD", {
   align: "center",
   colors: ["blue"],
 });
-say(`⚜️ SILENCE-MD, Bot By @eabdalmufid_`, {
+say(`⚜️ SILENCE-MD, Bot By @eabdlmufid`, {
   font: "console",
   align: "center",
   colors: ["green"],

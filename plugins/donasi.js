@@ -6,7 +6,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
     return conn.sendButton(m.chat, 'Scan QRIS Di Atas\nDonasi Minimal 500P :v', donate, img2, [["MENU", usedPrefix + "menu"], ["OWNER", usedPrefix + "owner"]], m, {
         contextInfo: {
             externalAdReply: {
-                mediaUrl: "https://instagram.com/eabdalmufid_",
+                mediaUrl: "https://instagram.com/eabdlmufid",
                 mediaType: "VIDEO",
                 title: 'Donasi To Silence',
                 body: bottime,

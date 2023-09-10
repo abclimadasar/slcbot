@@ -31,7 +31,7 @@ let date = d.toLocaleDateString(locale, {
 // Kalau gapunya di biarin aja!, atau ga di kasih tanda '-'
 
 // kalo ga punya ketik "-" atau biarin aja biar ada creditsnya :v
-global.sig = "https://instagram.com/eabdalmufid_"; //Instagram mu
+global.sig = "https://instagram.com/eabdlmufid"; //Instagram mu
 global.sgh = "https://github.com/eabdalmufid"; //Github mu
 global.swb = "https://silencemd.eu.org";
 global.sfb = "https://www.facebook.com/";
